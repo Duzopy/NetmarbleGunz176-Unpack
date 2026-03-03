@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML id="zitem">
+	<!--
+		[ 추가사항 ]
+		
+		우선은 선택한 무기에만 적용됨...( 스피드 반지등은 만들수없음..필요하면 추가 )
+		
+		무기에 따른 속도 제어	: limitspeed="70"	수치는 비율.. 기본은 100%
+		무기에 따른 점프 제한	: limitjump = "1"	수치는 0 , 1 (기본은 0 점프가능)
+		무기에 따른 가속 제한	: limittumble = "1" 수치는 0 , 1 (기본은 0 점프가능)
+		무기에 따른 벽타기 제한 : limitwall = "1"	수치는 0 , 1 (기본은 0 점프가능)
+		
+	-->
+	<!-- 일반아이템 ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 무기 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 단검 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="1" name="구식 단검" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="5" bt_price="20" delay="100" damage="8" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="오래된 단검. 군데군데 녹슨 흔적도 보인다. 사용후 되팔기엔 어려워보인다." />
+	<ITEM id="11" name="철제 단검" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="5" slot="melee" weapon="dagger" weight="5" bt_price="200" delay="90" damage="9" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="일반적으로 쉽게 구할수 있는 단검. 공장에서 생산된것 같다. 표면에 희미하게 일련번호가 보인다." />
+	<ITEM id="3" name="군용 단검" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="9" slot="melee" weapon="dagger" weight="6" bt_price="400" delay="90" damage="11" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="군대에서 사용중인 돌격형 단검." />
+	<ITEM id="4" name="경량 단검" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="18" slot="melee" weapon="dagger" weight="5" bt_price="1000" delay="80" damage="10" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="아주 가벼우면서도 사용하기 편리한 단검." />
+	<ITEM id="5" name="고급 단검" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="27" slot="melee" weapon="dagger" weight="6" bt_price="2500" delay="85" damage="12" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="357magrevolver_dryfire"
+		snd_dryfire="357magrevolver_dryfire" desc="대량생산은 되지 않는 고급 단검. 장인이 새겨놓은 아름다운 문양이 돋보인다. 그러나 제법 묵직해보인다." />
+	<ITEM id="6" name="팬텀 슬레잉 대거" mesh_name="dagger02" totalpoint="0" type="melee" res_sex="a"
+		res_level="36" slot="melee" weapon="dagger" weight="4" bt_price="5000" delay="90" damage="13" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFF80" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="악령을 물리치기 위해 사용되었다는 신비로운 단검. 다만 이 단검으로 악령이 물리쳐지는지는 미지수." />
+	<ITEM id="7" name="극초혼" mesh_name="dagger03" totalpoint="0" type="melee" res_sex="a" res_level="45"
+		slot="melee" weapon="dagger" weight="6" bt_price="10000" delay="80" damage="14" ctrl_ability="0" magazine="0"
+		reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0"
+		cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0" magazine_image_id="0"
+		desc="아주 소수의 사람들이 사용하는 단검. 한정수량이 제작되었다고 한다." />
+	<!-- 장검 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="2" name="구식 장검" mesh_name="katana01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="10" bt_price="20" delay="60" damage="15" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="오래된 장검. 군데군데 녹슨 흔적도 보인다. 사용후 되팔기엔 어려워보인다." />
+	<ITEM id="12" name="철제 장검" mesh_name="katana02" totalpoint="0" type="melee" res_sex="a"
+		res_level="5" slot="melee" weapon="katana" weight="10" bt_price="300" delay="60" damage="16" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="일반적으로 쉽게 구할수 있는 장검. 공장에서 생산된것 같다. 표면에 희미하게 일련번호가 보인다." />
+	<ITEM id="13" name="군용 장검" mesh_name="katana02" totalpoint="0" type="melee" res_sex="a"
+		res_level="10" slot="melee" weapon="katana" weight="12" bt_price="600" delay="50" damage="18" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="군대에서 사용중인 장검. 일반 사병들에게는 지급되지 않는다고 한다. 제법 고급스러운 외관" />
+	<ITEM id="14" name="경량 장검" mesh_name="katana01" totalpoint="0" type="melee" res_sex="a"
+		res_level="20" slot="melee" weapon="katana" weight="9" bt_price="1500" delay="40" damage="15" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="사용하기 편리하도록 만든 경량의 장검." />
+	<ITEM id="15" name="고급 장검" mesh_name="katana04" totalpoint="0" type="melee" res_sex="a"
+		res_level="30" slot="melee" weapon="katana" weight="13" bt_price="3600" delay="40" damage="20" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="고급재료로 만든 특수한 용도의 장검." />
+	<ITEM id="16" name="데빌 슬레이어" mesh_name="katana06" totalpoint="0" type="melee" res_sex="a"
+		res_level="40" slot="melee" weapon="katana" weight="11" bt_price="7200" delay="40" damage="22" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="악령을 물리치기 위해 만들어졌다는 신비로운 장검." />
+	<ITEM id="17" name="용월랑" mesh_name="katana03" totalpoint="0" type="melee" res_sex="a"
+		res_level="50" slot="melee" weapon="katana" weight="12" bt_price="15000" delay="30" damage="24" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc="금장도금이 되어 있는 명검. 이 명검의 풍채는 수집가들의 애간장을 녹이기에 충분하다." />
+	<!-- Pistol : Magazine = 6 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="4001" name="랩터 50" mesh_name="pistol01" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="7" bt_price="20" delay="250" damage="8" ctrl_ability="30"
+		magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="제국에서 오래전부터 생산되어 사용된 권총. 현재는 단종되었다. 제작사 월콤."
+		effect_id="3" />
+	<ITEM id="4002" name="랩터 50 x2" mesh_name="pistol01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="14" bt_price="40" delay="250" damage="16" ctrl_ability="36"
+		magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 제국에서 오래전부터 생산되어 사용된 권총. 현재는 단종되었다. 제작사 월콤."
+		effect_id="4" />
+	<ITEM id="4009" name="랩터 80" mesh_name="pistol01" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="pistol" weight="7" bt_price="200" delay="200" damage="8" ctrl_ability="30"
+		magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="랩터 50의 후속기. 실제적으론 약간의 성능향상만 있었을뿐 외관도 변화하지 않았다. 경쟁사의 신제품 발표로 인하여 조기제작중단을 선언했다. 제작사 월콤."
+		effect_id="3" />
+	<ITEM id="4010" name="랩터 80 x2" mesh_name="pistol01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="pistol" weight="14" bt_price="360" delay="200" damage="16" ctrl_ability="36"
+		magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 랩터 50의 후속기. 실제적으론 약간의 성능향상만 있었을뿐 외관도 변화하지 않았다. 경쟁사의 신제품 발표로 인하여 조기제작중단을 선언했다. 제작사 월콤."
+		effect_id="4" />
+	<ITEM id="4011" name="레이븐 5" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="6" slot="range" weapon="pistol" weight="8" bt_price="300" delay="250" damage="10" ctrl_ability="40"
+		magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="공화국의 전선에 공급하기 위해 제작한 권총. 제작사 맥스웰." effect_id="3" />
+	<ITEM id="4012" name="레이븐 5 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="8" slot="range" weapon="pistol" weight="16" bt_price="540" delay="250" damage="20" ctrl_ability="48"
+		magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 공화국의 전선에 공급하기 위해 제작한 권총. 제작사 맥스웰."
+		effect_id="4" />
+	<ITEM id="4003" name="랩터 120" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="pistol" weight="7" bt_price="500" delay="200" damage="9" ctrl_ability="25"
+		magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="군 납품을 목적으로 개발된 보급형. 랩터 80에 비해 향상된 제어력을 느낄수 있다. 제작사 월콤"
+		effect_id="3" />
+	<ITEM id="4004" name="랩터 120 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="pistol" weight="14" bt_price="900" delay="200" damage="18" ctrl_ability="30"
+		magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 군 납품을 목적으로 개발된 보급형. 랩터 80에 비해 향상된 제어력을 느낄수 있다. 제작사 월콤"
+		effect_id="4" />
+	<ITEM id="4013" name="레이븐 6" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="14" slot="range" weapon="pistol" weight="8" bt_price="800" delay="220" damage="12" ctrl_ability="40"
+		magazine="14" maxbullet="84" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="레이븐 5의 후속모델. 보다 강력해진 성능이 눈에 뜨이나 여전히 경량화에는 실패하였다. 제작사 맥스웰."
+		effect_id="3" />
+	<ITEM id="4014" name="레이븐 6 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="16" slot="range" weapon="pistol" weight="16" bt_price="1440" delay="220" damage="24" ctrl_ability="48"
+		magazine="14" maxbullet="84" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 레이븐 5의 후속모델. 보다 강력해진 성능이 눈에 뜨이나 여전히 경량화에는 실패하였다. 제작사 맥스웰."
+		effect_id="4" />
+	<ITEM id="4015" name="랩터 160" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="pistol" weight="8" bt_price="2500" delay="180" damage="11" ctrl_ability="25"
+		magazine="13" maxbullet="78" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="랩터 120의 후속모델. 강력해진 성능과 뛰어난 연사력을 자랑한다."
+		effect_id="3" />
+	<ITEM id="4016" name="랩터 160 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="pistol" weight="16" bt_price="4500" delay="180" damage="22" ctrl_ability="30"
+		magazine="13" maxbullet="78" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 랩터 120의 후속모델. 강력해진 성능과 뛰어난 연사력을 자랑한다."
+		effect_id="4" />
+	<ITEM id="4017" name="레이븐 7" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="32" slot="range" weapon="pistol" weight="9" bt_price="5000" delay="210" damage="13" ctrl_ability="40"
+		magazine="15" maxbullet="90" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="보다 강화된 화력의 레이븐 7. 기존의 모델보다 더 강력한 화력과 연사력. 그러나 제어력과 무게면에선 여전히 단점을 지니고 있다."
+		effect_id="3" />
+	<ITEM id="4018" name="레이븐 7 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="34" slot="range" weapon="pistol" weight="18" bt_price="9000" delay="210" damage="26" ctrl_ability="48"
+		magazine="15" maxbullet="90" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 보다 강화된 화력의 레이븐 7. 기존의 모델보다 더 강력한 화력과 연사력. 그러나 제어력과 무게면에선 여전히 단점을 지니고 있다."
+		effect_id="4" />
+	<ITEM id="4019" name="랩터 200" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="40" slot="range" weapon="pistol" weight="8" bt_price="8000" delay="160" damage="11" ctrl_ability="25"
+		magazine="14" maxbullet="84" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="높은 정확성으로 신뢰받는 랩터시리즈. 월콤의 발전된 개발력을 확인할수 있다."
+		effect_id="3" />
+	<ITEM id="4020" name="랩터 200 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="pistol" weight="16" bt_price="14400" delay="160" damage="22" ctrl_ability="30"
+		magazine="14" maxbullet="84" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 높은 정확성으로 신뢰받는 랩터시리즈. 월콤의 발전된 개발력을 확인할수 있다."
+		effect_id="4" />
+
+	<!-- Revolver : Magazine = 8 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="4005" name="미닉 567" mesh_name="pistol07" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="8" bt_price="20" delay="400" damage="16" ctrl_ability="60"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="맥스웰사가 제작했던 공화국의 일반보병에게 지급되었던 전설같은 리볼버. 현재는 단종되었다."
+		effect_id="3" />
+	<ITEM id="4006" name="미닉 567 x2" mesh_name="pistol07x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="16" bt_price="40" delay="400" damage="32" ctrl_ability="72"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 맥스웰사가 제작했던 공화국의 일반보병에게 지급되었던 전설같은 리볼버. 현재는 단종되었다."
+		effect_id="4" />
+	<ITEM id="4501" name="다이낙스 7000" mesh_name="pistol12" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="pistol" weight="7" bt_price="220" delay="300" damage="14" ctrl_ability="60"
+		magazine="8" maxbullet="64" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="카녹스의 초기형 경량리볼버. 현재는 단종된 모델이다. 현재는 단종된 모델이지만 중고모델이 자주 거래되곤 한다."
+		effect_id="3" />
+	<ITEM id="4502" name="다이낙스 7000 x2" mesh_name="pistol12x2" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="pistol" weight="14" bt_price="396" delay="300" damage="28"
+		ctrl_ability="72" magazine="8" maxbullet="64" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 카녹스의 초기형 경량리볼버. 현재는 단종된 모델이지만 중고모델이 자주 거래되곤 한다."
+		effect_id="4" />
+	<ITEM id="4503" name="미닉 567 Limited" mesh_name="pistol07" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="pistol" weight="8" bt_price="340" delay="400" damage="18"
+		ctrl_ability="50" magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="맥스웰사의 미닉발매 5주년 기념 모델. 오리지널에 비해 더 높은 안정성과 파워를 가지고 있다."
+		effect_id="3" />
+	<ITEM id="4504" name="미닉 567 Limited x2" mesh_name="pistol07x2" totalpoint="0" type="range"
+		res_sex="a" res_level="9" slot="range" weapon="pistol" weight="16" bt_price="612" delay="400" damage="36"
+		ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 맥스웰사의 미닉발매 5주년 기념 모델. 오리지널에 비해 더 높은 안정성과 파워를 가지고 있다."
+		effect_id="4" />
+	<ITEM id="4007" name="자우르스 A" mesh_name="pistol08" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="pistol" weight="7" bt_price="550" delay="400" damage="20" ctrl_ability="60"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="군 납품을 위해 월콤사가 개발한 보급형 리볼버." effect_id="3" />
+	<ITEM id="4008" name="자우르스 A x2" mesh_name="pistol08x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="pistol" weight="14" bt_price="990" delay="400" damage="40" ctrl_ability="72"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 군 납품을 위해 월콤사가 개발한 보급형 리볼버." effect_id="4" />
+	<ITEM id="4505" name="팬텀크루즈" mesh_name="pistol10" totalpoint="0" type="range" res_sex="a"
+		res_level="16" slot="range" weapon="pistol" weight="9" bt_price="1200" delay="400" damage="22" ctrl_ability="70"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="니코사가 선보인 고급 리볼버. 기존의 리볼버와는 다른 디자인으로 인기가 높다."
+		effect_id="3" />
+	<ITEM id="4506" name="팬텀크루즈 x2" mesh_name="pistol10x2" totalpoint="0" type="range" res_sex="a"
+		res_level="18" slot="range" weapon="pistol" weight="18" bt_price="2160" delay="400" damage="44" ctrl_ability="84"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 니코사가 선보인 고급 리볼버. 기존의 리볼버와는 다른 디자인으로 인기가 높다."
+		effect_id="4" />
+	<ITEM id="4507" name="팬텀크루즈 N" mesh_name="pistol10" totalpoint="0" type="range" res_sex="a"
+		res_level="21" slot="range" weapon="pistol" weight="8" bt_price="2500" delay="400" damage="23" ctrl_ability="65"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="팬텀크루즈의 마이너 업그레이드형. 약간의 성능향상이 있었다."
+		effect_id="3" />
+	<ITEM id="4508" name="팬텀크루즈 N x2" mesh_name="pistol10x2" totalpoint="0" type="range" res_sex="a"
+		res_level="23" slot="range" weapon="pistol" weight="16" bt_price="4500" delay="400" damage="46" ctrl_ability="78"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 팬텀크루즈의 마이너 업그레이드형. 약간의 성능향상이 있었다."
+		effect_id="4" />
+	<ITEM id="4509" name="다이낙스 8000" mesh_name="pistol12" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="pistol" weight="7" bt_price="4000" delay="300" damage="18" ctrl_ability="60"
+		magazine="8" maxbullet="64" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="카녹스의 경량리볼버. 7000의 후속기종이지만 성능이 탁월하게 개선되었다."
+		effect_id="3" />
+	<ITEM id="4510" name="다이낙스 8000 x2" mesh_name="pistol12x2" totalpoint="0" type="range"
+		res_sex="a" res_level="28" slot="range" weapon="pistol" weight="14" bt_price="7200" delay="300" damage="36"
+		ctrl_ability="72" magazine="8" maxbullet="64" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 카녹스의 경량리볼버. 7000의 후속기종이지만 성능이 탁월하게 개선되었다."
+		effect_id="4" />
+	<ITEM id="4511" name="미닉 567 MK.II" mesh_name="pistol07" totalpoint="0" type="range"
+		res_sex="a" res_level="34" slot="range" weapon="pistol" weight="8" bt_price="7000" delay="400" damage="25"
+		ctrl_ability="50" magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="맥스웰사의 미닉발매 5주년 기념 모델. 오리지널에 비해 더 높은 안정성과 파워를 가지고 있다."
+		effect_id="3" />
+	<ITEM id="4512" name="미닉 567 MK.II x2" mesh_name="pistol07x2" totalpoint="0" type="range"
+		res_sex="a" res_level="36" slot="range" weapon="pistol" weight="16" bt_price="12600" delay="400" damage="50"
+		ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 맥스웰사의 미닉발매 5주년 기념 모델. 오리지널에 비해 더 높은 안정성과 파워를 가지고 있다."
+		effect_id="4" />
+	<ITEM id="4513" name="자우르스 B" mesh_name="pistol08" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="pistol" weight="8" bt_price="12000" delay="360" damage="25" ctrl_ability="50"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="강력한 파워를 자랑하는 리볼버 자우르스 B식. 정확도가 보다 향상되었다." effect_id="3" />
+	<ITEM id="4514" name="자우르스 B x2" mesh_name="pistol08x2" totalpoint="0" type="range" res_sex="a"
+		res_level="46" slot="range" weapon="pistol" weight="16" bt_price="21600" delay="360" damage="50" ctrl_ability="60"
+		magazine="6" maxbullet="48" reloadtime="8" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="we_revolver_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="(양손장비) 강력한 파워를 자랑하는 리볼버 자우르스 B식. 정확도가 보다 향상되었다." effect_id="4" />
+		
+	<!-- SMG : Magazine = 5 ea//Controllability Point = 1.8 //////////////////////////////////////////////////////// -->
+	<ITEM id="5001" name="레너드" mesh_name="smg01" totalpoint="0" type="range" res_sex="a" res_level="0"
+		slot="range" weapon="smg" weight="15" bt_price="30" delay="90" damage="7" ctrl_ability="50" magazine="32"
+		maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire"
+		desc="오래전부터 사용된 카녹스사의 구형 서브머신건. 현재는 단종되었다." effect_id="5" />
+	<ITEM id="5002" name="레너드 x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="smg" weight="30" bt_price="60" delay="90" damage="14" ctrl_ability="90"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 오래전부터 사용된 카녹스사의 구형 서브머신건. 현재는 단종되었다."
+		effect_id="6" />
+	<ITEM id="5003" name="월콤 S5" mesh_name="smg02" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="smg" weight="15" bt_price="750" delay="90" damage="8" ctrl_ability="50"
+		magazine="36" maxbullet="180" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="월콤사의 서브머신건. 보다 높은 화력과 장탄수로 사랑받고 있다." effect_id="5" />
+	<ITEM id="5004" name="월콤 S5 x2" mesh_name="smg02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="13" slot="range" weapon="smg" weight="30" bt_price="1350" delay="90" damage="16" ctrl_ability="90"
+		magazine="36" maxbullet="180" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 월콤사의 서브머신건. 보다 높은 화력과 장탄수로 사랑받고 있다."
+		effect_id="6" />
+	<ITEM id="5005" name="엘란" mesh_name="smg05" totalpoint="0" type="range" res_sex="a" res_level="10"
+		slot="range" weapon="smg" weight="12" bt_price="700" delay="90" damage="5" ctrl_ability="70" magazine="60"
+		maxbullet="300" reloadtime="2" slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire"
+		desc="카녹스사의 소형 서브머신건. 휴대성에 보다 중점을 두고 제작하였다." effect_id="5" />
+	<ITEM id="5006" name="엘란 x2" mesh_name="smg05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="smg" weight="24" bt_price="1260" delay="90" damage="10" ctrl_ability="126"
+		magazine="60" maxbullet="300" reloadtime="2" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 카녹스사의 소형 서브머신건. 휴대성에 보다 중점을 두고 제작하였다."
+		effect_id="6" />
+	<ITEM id="5007" name="레너드 V" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="smg" weight="15" bt_price="2800" delay="85" damage="7" ctrl_ability="35"
+		magazine="32" maxbullet="160" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="폭넓게 사랑받았던 레너드의 후속기종. 제어력과 연사력에 개선이 있었다." effect_id="5" />
+	<ITEM id="5008" name="레너드 V x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="27" slot="range" weapon="smg" weight="30" bt_price="5040" delay="85" damage="14" ctrl_ability="74"
+		magazine="32" maxbullet="160" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 폭넓게 사랑받았던 레너드의 후속기종. 제어력과 연사력에 개선이 있었다."
+		effect_id="6" />
+	<ITEM id="5009" name="월콤 S6" mesh_name="smg02" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="smg" weight="16" bt_price="2800" delay="95" damage="9" ctrl_ability="55"
+		magazine="36" maxbullet="180" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="월콤사의 S5 후속기. 이전 모델에 비하여 더욱 향상된 화력과 안정성" effect_id="5" />
+	<ITEM id="5010" name="월콤 S6 x2" mesh_name="smg02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="27" slot="range" weapon="smg" weight="32" bt_price="5040" delay="95" damage="18" ctrl_ability="115"
+		magazine="36" maxbullet="180" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 월콤사의 S5 후속기. 이전 모델에 비하여 더욱 향상된 화력과 안정성"
+		effect_id="6" />
+	<ITEM id="5011" name="뉴 레너드 V" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="36" slot="range" weapon="smg" weight="15" bt_price="5600" delay="80" damage="8" ctrl_ability="35"
+		magazine="40" maxbullet="200" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="카녹스가 레너드 V의 인기에 힘입어 내놓은 NEW버전" effect_id="5" />
+	<ITEM id="5012" name="뉴 레너드 V x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="39" slot="range" weapon="smg" weight="30" bt_price="10080" delay="80" damage="16" ctrl_ability="74"
+		magazine="40" maxbullet="200" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 카녹스가 레너드 V의 인기에 힘입어 내놓은 NEW버전" effect_id="6" />
+	<ITEM id="5013" name="월콤 XL" mesh_name="smg03" totalpoint="0" type="range" res_sex="a"
+		res_level="36" slot="range" weapon="smg" weight="14" bt_price="5800" delay="95" damage="9" ctrl_ability="50"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="월콤사의 70주년 기념 SMG. 사실상 S6의 마이너그레이드 버전으로 불리는 경량화바디"
+		effect_id="5" />
+	<ITEM id="5014" name="월콤 XL x2" mesh_name="smg03x2" totalpoint="0" type="range" res_sex="a"
+		res_level="39" slot="range" weapon="smg" weight="28" bt_price="10440" delay="95" damage="18" ctrl_ability="105"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 월콤사의 70주년 기념 SMG. 사실상 S6의 마이너그레이드 버전으로 불리는 경량화바디"
+		effect_id="6" />
+	<ITEM id="5015" name="레너드 VI" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="smg" weight="14" bt_price="12000" delay="80" damage="8" ctrl_ability="35"
+		magazine="40" maxbullet="200" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="월콤 XL때문에 상대적으로 인기가 하락한 카녹스에서 내놓은 신모델." effect_id="5" />
+	<ITEM id="5016" name="레너드 VI x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="48" slot="range" weapon="smg" weight="28" bt_price="21600" delay="80" damage="16" ctrl_ability="74"
+		magazine="40" maxbullet="200" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) 월콤 XL때문에 상대적으로 인기가 하락한 카녹스에서 내놓은 신모델." effect_id="6" />
+	<ITEM id="5017" name="월콤 XLS" mesh_name="smg03" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="smg" weight="14" bt_price="12000" delay="95" damage="11" ctrl_ability="50"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="XL의 인기로 인하여 새로 내놓은 월콤의 신모델. 사실상 화력부분만을 개선하였다."
+		effect_id="5" />
+	<ITEM id="5018" name="월콤 XLS x2" mesh_name="smg03x2" totalpoint="0" type="range" res_sex="a"
+		res_level="48" slot="range" weapon="smg" weight="28" bt_price="21600" delay="95" damage="22" ctrl_ability="105"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="(양손장비) XL의 인기로 인하여 새로 내놓은 월콤의 신모델. 사실상 화력부분만을 개선하였다."
+		effect_id="6" />
+
+	<!-- SHOTGUN : Magazine = 5 ea ////////////////////////////////////////////////////////////////// -->
+	<ITEM id="6001" name="브레이커 3" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="shotgun" weight="15" bt_price="200" delay="1100" damage="6" ctrl_ability="60"
+		magazine="3" maxbullet="15" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="오래전부터 샷건을 전문적으로 생산하고 있는 리오닉스사의 펌프액션타입 샷건. 현재는 단종되었다."
+		effect_id="7" />
+	<ITEM id="6002" name="브레이커 5" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="shotgun" weight="18" bt_price="800" delay="1000" damage="6" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="리오닉스사의 펌프액션타입 샷건. 생산된지는 상당히 오래되었지만 여전히 인기가 높다."
+		effect_id="7" />
+	<ITEM id="6003" name="브레이커 6" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="shotgun" weight="20" bt_price="1600" delay="1000" damage="7" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="비교적 최근에 발표된 리오닉스의 신형샷건이다." effect_id="7" />
+	<ITEM id="6004" name="브레이커 7" mesh_name="shotgun03" totalpoint="0" type="range" res_sex="a"
+		res_level="30" slot="range" weapon="shotgun" weight="20" bt_price="8000" delay="1000" damage="8" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="기존의 브레이커 시리즈와는 다른 디자인으로 선보인 리오닉스의 7번째 모델." effect_id="7" />
+	<ITEM id="6005" name="어벤져" mesh_name="shotgun07" totalpoint="0" type="range" res_sex="a"
+		res_level="30" slot="range" weapon="shotgun" weight="15" bt_price="9000" delay="1200" damage="10" ctrl_ability="100"
+		magazine="2" maxbullet="10" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="니코사에서 기념비적으로 내놓은 샷건. 한마디로 엄청난 파괴력을 가졌다. 적은 장탄수가 단점." effect_id="7" />
+	<ITEM id="6006" name="브레이커 8" mesh_name="shotgun03" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="shotgun" weight="20" bt_price="20000" delay="1000" damage="9" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="브레이커 시리즈로 샷건메이커로 유명한 리오닉스의 신형 샷건" effect_id="7" />
+	<ITEM id="6007" name="어벤져 MK.II" mesh_name="shotgun07" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="shotgun" weight="16" bt_price="24000" delay="1200" damage="11" ctrl_ability="100"
+		magazine="2" maxbullet="10" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="모험가들을 깜짝 놀라게 한 어벤져의 후속기." effect_id="7" />
+
+	<!-- RIFLE : Magazine = 5 ea //////////////////////////////////////////////////////////////////////////-->
+	<ITEM id="7001" name="니코 R2" mesh_name="rifle03" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="rifle" weight="15" bt_price="400" delay="120" damage="11" ctrl_ability="30"
+		magazine="32" maxbullet="160" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="니코사의 초기형 소총." effect_id="8" />
+	<ITEM id="7002" name="니코 R5" mesh_name="rifle01" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="rifle" weight="18" bt_price="1500" delay="110" damage="12" ctrl_ability="30"
+		magazine="32" maxbullet="160" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="현재 제국군에서 가장 인기있는 소총중 하나이다." effect_id="8" />
+	<ITEM id="7003" name="월콤 워리어 77" mesh_name="rifle02" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rifle" weight="20" bt_price="2800" delay="100" damage="15" ctrl_ability="50"
+		magazine="24" maxbullet="120" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="월콤사에서 제작. 사용이 까다로운 단점은 있지만 상대적으로 강력한 위력을 맛볼수있다."
+		effect_id="8" />
+	<ITEM id="7004" name="맥스웰 LX30" mesh_name="rifle04" totalpoint="0" type="range" res_sex="a"
+		res_level="18" slot="range" weapon="rifle" weight="20" bt_price="3000" delay="80" damage="13" ctrl_ability="20"
+		magazine="40" maxbullet="200" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="맥스웰사 제작. 안정감넘치는 그립과 조작성, 빠른 연사로 각광받고 있다." effect_id="8" />
+	
+	<ITEM id="7005" name="니코 R6" mesh_name="rifle03" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="rifle" weight="18" bt_price="6000" delay="90" damage="15" ctrl_ability="30"
+		magazine="36" maxbullet="160" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="인기높은 니코사의 R5의 후속기. 보다 화력이 개선되어 R5 매니아들의 사랑을 받고 있다." effect_id="8" />
+	<ITEM id="7006" name="맥스웰 LX44" mesh_name="rifle04" totalpoint="0" type="range" res_sex="a"
+		res_level="34" slot="range" weapon="rifle" weight="20" bt_price="12000" delay="80" damage="14" ctrl_ability="20"
+		magazine="40" maxbullet="200" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="(단종 아이템) LX30보다도 강력해진 연사력과 화력을 가진 라이플. 안정감 있는 그립에 여전히 높은 정확도를 자랑한다." effect_id="8" />
+	<ITEM id="7007" name="니코 R7" mesh_name="rifle01" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="rifle" weight="18" bt_price="24000" delay="90" damage="16" ctrl_ability="30"
+		magazine="40" maxbullet="200" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="화력면에서 보다 향상됨을 느낄수 있는 인기있는 니코사의 신형 라이플" effect_id="8" />
+	<ITEM id="7008" name="월콤 워리어 88" mesh_name="rifle02" totalpoint="0" type="range" res_sex="a"
+		res_level="50" slot="range" weapon="rifle" weight="20" bt_price="48000" delay="100" damage="19" ctrl_ability="50"
+		magazine="32" maxbullet="160" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="여전히 사용이 용이한 느낌은 아니지만 강력한 화력에 초점을 맞춘 월콤의 신제품." effect_id="8" />
+
+	<!-- MACHINEGUN /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="8001" name="니코 MG-K8" mesh_name="machinegun01" totalpoint="0" type="range" res_sex="a"
+		res_level="25" slot="range" weapon="machinegun" weight="32" bt_price="8000" delay="90" damage="12" ctrl_ability="100"
+		magazine="120" maxbullet="480" reloadtime="10" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="70" limittumble="1"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="들고다니기 벅찰 정도의 무게지만 K8의 위력적인 연사력은 적들에게 있어서는 공포감을 선사하고 있다." effect_id="9" />
+	<ITEM id="8002" name="니코 MG-K9" mesh_name="machinegun01" totalpoint="0" type="range" res_sex="a"
+		res_level="35" slot="range" weapon="machinegun" weight="32" bt_price="16000" delay="90" damage="13" ctrl_ability="100"
+		magazine="120" maxbullet="480" reloadtime="10" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="70" limittumble="1"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="보다 업그레이드 된 화력의 K9 머신건. 위력적인 연사속도와 제어성은 공포의 화기로 불리우기에 부족함이 없다." effect_id="9" />
+	<ITEM id="8003" name="니코 MG-KX" mesh_name="machinegun02" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="machinegun" weight="32" bt_price="32000" delay="90" damage="14" ctrl_ability="100"
+		magazine="120" maxbullet="480" reloadtime="10" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="70" limittumble="1"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="폭발적인 화력의 니코 신형 머신건. MG-KX를 전장에서 마주치는 것으로도 고통스러울 것 같다." effect_id="9" />
+
+	<!-- ROCKET LAUNCHER : Magazine = 4 ea ///////////////////////////////////////////////////////////////////// -->
+	<ITEM id="9006" name="맥스웰 RW-66" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="10" slot="range" weapon="rocket" weight="30" bt_price="2000" delay="1000" damage="30"
+		ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3" slug_output="true" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80" limitwall="1"
+		color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rocket_reload"
+		snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire" desc="맥스웰사의 초기형 로켓. 위력은 그다지 좋지 못하다." />
+	<ITEM id="9001" name="월콤 L1" mesh_name="rocketlauncher" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rocket" weight="30" bt_price="3200" delay="1200" damage="50" ctrl_ability="50"
+		magazine="3" maxbullet="12" reloadtime="3" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80" limitwall="1"
+		color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rocket_reload"
+		snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire" desc="월콤에서 선보인 강력한 위력의 로켓런쳐." />
+	<ITEM id="9002" name="맥스웰 RW-77" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="20" slot="range" weapon="rocket" weight="28" bt_price="5200" delay="900" damage="35"
+		ctrl_ability="50" magazine="5" maxbullet="20" reloadtime="3" slug_output="true" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitwall="1" limitspeed="80"
+		color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rocket_reload"
+		snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire" desc="맥스웰이 선보인 로켓. 월콤의 L시리즈보다 장탄수를 늘리고 연사력을 높였다. 단, 이를 위한 화력의 희생은 불가피하였다." />
+	<ITEM id="9003" name="월콤 L1 mk. II" mesh_name="rocketlauncher" totalpoint="0" type="range"
+		res_sex="a" res_level="30" slot="range" weapon="rocket" weight="30" bt_price="12000" delay="1200"
+		damage="55" ctrl_ability="50" magazine="3" maxbullet="12" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="월콤의 로켓런쳐. L1의 마이너 업그레이드 버전으로 약간량 로켓의 파워를 향상시켰다." />
+	<ITEM id="9004" name="맥스웰 RW-88" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="40" slot="range" weapon="rocket" weight="28" bt_price="24000" delay="800"
+		damage="36" ctrl_ability="50" magazine="5" maxbullet="20" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="RW-77의 업그레이드형. 외관의 변화는 없었으나 연사속도를 향상시켰다." />
+	<ITEM id="9005" name="월콤 L2" mesh_name="rocketlauncher03" totalpoint="0" type="range"
+		res_sex="a" res_level="50" slot="range" weapon="rocket" weight="25" bt_price="50000" delay="1200"
+		damage="55" ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="월콤의 로켓런쳐. L1보다 장탄수를 늘림으로써 더욱 위력적인 무기가 되었다. 아울러 경량화를 실현한 모델" />
+
+	<!-- Snifer Rifle /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="10001" name="SniferRifle1" mesh_name="rifle03" totalpoint="0" type="range"
+		res_sex="a" res_level="0" slot="range" weapon="snifer" weight="25" bt_price="50000" delay="1200"
+		damage="80" ctrl_ability="0" magazine="2" maxbullet="16" reloadtime="7" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="80"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"	snd_dryfire="762arifle_dryfire"
+		desc="버드가 제작한 스나이퍼 라이플. " />
+	
+	
+	
+	
+	<!-- HANDHELD ITEMS ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="30301" name="카녹스 FG1" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="frag" weight="2" bt_price="200" delay="1500" damage="100" ctrl_ability="20"
+		magazine="2" maxbullet="2" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="실내에서 사용하기 용이하도록 제작된 카녹스사의 신형 수류탄. 2개" />
+	<ITEM id="30302" name="카녹스 FG2" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="11" slot="custom" weapon="frag" weight="3" bt_price="500" delay="1500" damage="100" ctrl_ability="20"
+		magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="실내에서 사용하기 용이하도록 제작된 카녹스사의 신형 수류탄. 3개" />
+	<ITEM id="30303" name="카녹스 FG3" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="22" slot="custom" weapon="frag" weight="4" bt_price="1000" delay="1500" damage="100"
+		ctrl_ability="20" magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="실내에서 사용하기 용이하도록 제작된 카녹스사의 신형 수류탄. 4개" />
+	<ITEM id="30304" name="카녹스 FG4" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="33" slot="custom" weapon="frag" weight="5" bt_price="2000" delay="1500" damage="100"
+		ctrl_ability="20" magazine="5" maxbullet="5" reloadtime="10" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="실내에서 사용하기 용이하도록 제작된 카녹스사의 신형 수류탄. 5개" />
+	<ITEM id="30305" name="카녹스 FG5" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="44" slot="custom" weapon="frag" weight="6" bt_price="4000" delay="1500" damage="100"
+		ctrl_ability="20" magazine="6" maxbullet="6" reloadtime="10" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="실내에서 사용하기 용이하도록 제작된 카녹스사의 신형 수류탄. 6개" />
+	<ITEM id="30201" name="카녹스 FB1" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="flashbang" weight="2" bt_price="200" delay="1500" damage="0" ctrl_ability="20"
+		magazine="2" maxbullet="2" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="섬광탄. 적의 시각과 청각을 순간 마비시킨다. 2개" />
+	<ITEM id="30202" name="카녹스 FB2" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="10" slot="custom" weapon="flashbang" weight="3" bt_price="500" delay="1500" damage="0" ctrl_ability="20"
+		magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="섬광탄. 적의 시각과 청각을 순간 마비시킨다. 3개" />
+	<ITEM id="30203" name="카녹스 FB3" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="flashbang" weight="4" bt_price="1000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="섬광탄. 적의 시각과 청각을 순간 마비시킨다. 4개" />
+	<ITEM id="30204" name="카녹스 FB4" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="30" slot="custom" weapon="flashbang" weight="5" bt_price="2000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="5" maxbullet="5" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="섬광탄. 적의 시각과 청각을 순간 마비시킨다. 5개" />
+	<ITEM id="30205" name="카녹스 FB5" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="flashbang" weight="6" bt_price="4000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="6" maxbullet="6" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="섬광탄. 적의 시각과 청각을 순간 마비시킨다. 6개" />
+	<ITEM id="30401" name="카녹스 SG1" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="smoke" weight="2" bt_price="200" delay="1500" damage="0" ctrl_ability="20"
+		magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="연막탄. 연기로 적의 시야를 교란시키기 위한 용도로 사용된다. 3개" />
+	<ITEM id="30402" name="카녹스 SG2" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="12" slot="custom" weapon="smoke" weight="3" bt_price="500" delay="1500" damage="0" ctrl_ability="20"
+		magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="연막탄. 연기로 적의 시야를 교란시키기 위한 용도로 사용된다. 4개" />
+	<ITEM id="30403" name="카녹스 SG3" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="24" slot="custom" weapon="smoke" weight="4" bt_price="1000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="5" maxbullet="5" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="연막탄. 연기로 적의 시야를 교란시키기 위한 용도로 사용된다. 5개" />
+	<ITEM id="30404" name="카녹스 SG4" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="36" slot="custom" weapon="smoke" weight="5" bt_price="2000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="6" maxbullet="6" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="연막탄. 연기로 적의 시야를 교란시키기 위한 용도로 사용된다. 6개" />
+	<ITEM id="30405" name="카녹스 SG5" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="48" slot="custom" weapon="smoke" weight="6" bt_price="4000" delay="1500" damage="0" ctrl_ability="20"
+		magazine="7" maxbullet="7" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="연막탄. 연기로 적의 시야를 교란시키기 위한 용도로 사용된다. 7개" />
+	<ITEM id="30001" name="의료킷 MK-1" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="medkit" weight="5" bt_price="400" delay="1000" damage="0" ctrl_ability="0"
+		magazine="2" maxbullet="2" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="체력을 회복시켜준다. 2개" />
+	<ITEM id="30002" name="의료킷 MK-2" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="medkit" weight="6" bt_price="5000" delay="1000" damage="0" ctrl_ability="0"
+		magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="체력을 회복시켜준다. 3개" />
+	<ITEM id="30003" name="의료킷 MK-3" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="medkit" weight="7" bt_price="20000" delay="1000" damage="0" ctrl_ability="0"
+		magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="체력을 회복시켜준다. 4개" />
+	<ITEM id="30101" name="수리킷 MK-1" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="medkit" weight="5" bt_price="400" delay="1000" damage="0" ctrl_ability="0"
+		magazine="2" maxbullet="2" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="망가진 방어구를 고쳐준다. 2개" />
+	<ITEM id="30102" name="수리킷 MK-2" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="medkit" weight="6" bt_price="5000" delay="1000" damage="0" ctrl_ability="0"
+		magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="망가진 방어구를 고쳐준다. 3개" />
+	<ITEM id="30103" name="수리킷 MK-3" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="medkit" weight="7" bt_price="20000" delay="1000" damage="0" ctrl_ability="0"
+		magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="망가진 방어구를 고쳐준다. 4개" />
+
+	<!-- 반지 /////////////////////////////////////////////////////////////////////////////////////////////-->
+	<ITEM id="25001" name="시민의 반지" totalpoint="0" type="equip" res_sex="a" res_level="0" slot="finger"
+		weight="2" bt_price="400" hp="5" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0"
+		color="#FFFFFFFF" desc="외관상으로는 그다지 아름다워 보이지는 않는 반지. 기념으로 시장이 발행하였다." />
+	<ITEM id="25002" name="크라잉호크 반지" totalpoint="0" type="equip" res_sex="a" res_level="0"
+		slot="finger" weight="2" bt_price="400" hp="0" ap="5" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="전설속에 내려오는 용맹한 어떤 특수대원들에게 지급되었다고 한다." />
+	<ITEM id="25003" name="전사의 함성" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="2" bt_price="1000" hp="8" ap="0" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="이 작은 반지에는 전쟁에서 살아돌아오길 바라는 많은 이들의 염원이 담긴듯하다." />
+	<ITEM id="25004" name="피에르의 반지" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="2" bt_price="1000" hp="0" ap="8" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="전쟁에서 사망한 어느 용맹한 지휘관을 추모하기 위해 발행된 반지." />
+	<ITEM id="25005" name="FMT 기념반지" totalpoint="0" type="equip" res_sex="a" res_level="20"
+		slot="finger" weight="2" bt_price="10000" hp="5" ap="5" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="FMT라는 시스템을 만들어낸 과학자들을 기념하기 위해 제작된 반지. 보석에 희미하게 맥필드라는 사인이 세공되어 있다." />
+	<ITEM id="25006" name="행운의 반지" totalpoint="0" type="equip" res_sex="a" res_level="20"
+		slot="finger" weight="0" bt_price="10000" hp="0" ap="0" maxwt="2" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="외관의 화려함은 없지만 웬지 모를 행운이 깃든 반지. 반지 착용자는 웬지 몸이 가볍다." />
+	<ITEM id="25007" name="알테마의 반지" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="2" bt_price="20000" hp="0" ap="10" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="팀아이에서 만든 알테마 황제의 업적을 기리기 위해 제작된 반지." />
+	<ITEM id="25008" name="밴드 오브 더 블러드" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="4" bt_price="20000" hp="10" ap="0" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="아름다운 빨간 보석이 박힌 예쁜 반지. 착용자로 하여금 생명력이 충만하도록 만든다고 한다." />
+	<ITEM id="25009" name="엘리아의 반지" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="2" bt_price="40000" hp="0" ap="15" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="알테마 황제의 명으로 엘리아공주를 추모하기 위해 만든 반지. 착용자로 하여금 웬지모를 자신감에 충만하게 만든다." />
+	<ITEM id="25010" name="깃털의 반지" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="0" bt_price="40000" hp="0" ap="0" maxwt="3" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="전설속의 새로부터 얻은 깃털로 만들었다는 반지. 착용자의 몸을 가볍게 만든다." />
+	<!-- 장비 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- chest /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="21001" name="아레스 런닝셔츠 A" mesh_name="eq_chest_12" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="군용의류 납품업체인 아레스가 판매하는 남성용 런닝셔츠." />
+	<ITEM id="21002" name="르노 면셔츠 A" mesh_name="eq_chest_06" totalpoint="0" type="equip" res_sex="m"
+		res_level="0" slot="chest" weight="10" bt_price="200" hp="0" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="르노 스포츠에서 내놓은 활동성 높은 남성용 면셔츠" />
+	<ITEM id="21003" name="베니코 가죽코트 A" mesh_name="eq_chest_13" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="chest" weight="15" bt_price="800" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="베니코에서 내놓은 남성용 가죽코트" />
+	<ITEM id="21004" name="빈츠 겨울철 자켓 A" mesh_name="eq_chest_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="chest" weight="18" bt_price="1600" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="가죽재질의 자켓으로 보온효과가 뛰어나다. 남성용" />
+	<ITEM id="21005" name="미즈 가죽코트 A" mesh_name="eq_chest_03" totalpoint="0" type="equip"
+		res_sex="m" res_level="30" slot="chest" weight="20" bt_price="3200" hp="0" ap="28"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="정장메이커인 미즈에서 내놓은 최신유행의 남성용 트렌치코트" />
+	<ITEM id="21006" name="아레스 군용자켓 A" mesh_name="eq_chest_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="12" bt_price="200" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="아레스사에서 군에게 납품하는 군용자켓" />
+	<ITEM id="21007" name="빈츠 모직 롱코트 A" mesh_name="eq_chest_07_1" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="chest" weight="16" bt_price="1600" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="빈츠에서 선보인 모직의 롱코트. 남성용" />
+
+	<!-- 여자 //////////////////////////////////////////////////-->
+	<ITEM id="21501" name="플렉스 면티셔츠 A" mesh_name="eq_chest_05" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="활동이 많은 여성들을 위해 내놓은 여성전용 면티셔츠" />
+	<ITEM id="21502" name="유라이크 가죽자켓 A" mesh_name="eq_chest_n013" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="10" bt_price="200" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="신축성있는 재질로 인기가 좋은 유라이크 여성용 가죽자켓" />
+	<ITEM id="21504" name="아로나 가죽자켓 A" mesh_name="eq_chest_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="chest" weight="15" bt_price="800" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="최신유행의 예쁜 가죽자켓. 여성용" />
+	<ITEM id="21503" name="렉스 군용조끼 A" mesh_name="eq_chest_p001" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="chest" weight="18" bt_price="1600" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="좋은 활동성과 전투에서의 생존성을 보장하는 여성용 군용조끼." />
+	<ITEM id="21505" name="L* 가죽코트 A" mesh_name="eq_chest_long001" totalpoint="0" type="equip"
+		res_sex="f" res_level="30" slot="chest" weight="20" bt_price="3200" hp="0" ap="28"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="L*에서 내놓은 럭셔리한 느낌의 여성용 코트" />
+	<ITEM id="21506" name="렉스 군용자켓 A" mesh_name="eq_chest_07" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="chest" weight="12" bt_price="200" hp="2" ap="8" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="렉스가 납품하고 있는 여군용 자켓" />
+	<ITEM id="21507" name="유라이크 롱코트 A" mesh_name="eq_chest_long004" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="chest" weight="16" bt_price="1600" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="유라이크 신상품. 맵시좋은 여성용 롱코트" />
+
+	<!-- hands /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////////// -->
+	<ITEM id="22001" name="아레스 전투장갑 A" mesh_name="eq_hands_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="hands" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="편안하고 무난한 디자인으로 사랑받는 미즈 남성용 가죽장갑" />
+	<ITEM id="22002" name="빈츠 방한 장갑 A" mesh_name="eq_hands_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="hands" weight="5" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바람을 막아주는 따뜻한 방한장갑. 남성용" />
+	<ITEM id="22003" name="아레스 철제장갑 A" mesh_name="eq_hands_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="hands" weight="8" bt_price="1000" hp="0" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="전투용으로 설계된 남성용 철제장갑. 뛰어난 방어력을 자랑한다." />
+	<ITEM id="22004" name="미즈 양가죽 장갑 A" mesh_name="eq_hands_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="hands" weight="6" bt_price="1500" hp="0" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="질긴 가죽으로 만들어진 장갑." />
+
+	<!-- 여자 ///////////////////////////////////////////////////// -->
+	<ITEM id="22501" name="렉스 전투장갑 A" mesh_name="eq_hands_07" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="hands" weight="5" bt_price="50" hp="0" ap="5" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="무난하면서도 신축성 소재의 가죽장갑" />
+	<ITEM id="22502" name="아로나 방한 가죽장갑 A" mesh_name="eq_hands_leather04" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="hands" weight="5" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="추위에서 손을 보호하기 위한 목적으로 만든 가죽장갑" />
+	<ITEM id="22503" name="렉스 철제장갑 A" mesh_name="eq_hands_02" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="hands" weight="8" bt_price="1000" hp="0" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="전투용으로 설계된 여성용 철제장갑" />
+	<ITEM id="22504" name="유라이크 양가죽장갑 A" mesh_name="eq_hands_leather02" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="hands" weight="6" bt_price="1500" hp="0" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="전투용으로 설계된 여성용 철제장갑" />
+
+	<!-- legs ////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 ///////////////////////////////////////////////// -->
+	<ITEM id="23001" name="빈츠 트레이닝 바지 A" mesh_name="eq_legs_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="50" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="뛰어난 신축성과 착용감을 강조한 빈츠의 남성용 바지" />
+	<ITEM id="23005" name="아레스 군용바지 A" mesh_name="eq_legs_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="200" hp="1" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="아레스사에서 군에게 납품하는 군용바지" />
+	<ITEM id="23002" name="르노 활동성 바지 A" mesh_name="eq_legs_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="르노 스포츠웨어에서 스포츠맨들을 위해 자신있게 내놓은 바지" />
+	<ITEM id="23004" name="베니코 대님바지 A" mesh_name="eq_legs_13" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="legs" weight="15" bt_price="1200" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="독특한 느낌의 베니코 남성용 대님바지" />
+	<ITEM id="23003" name="미즈 가죽 바지 A" mesh_name="eq_legs_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="legs" weight="15" bt_price="2400" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="고급스럽게 디자인한 가죽바지. 천연가죽을 활용하여 깔끔한 재단으로 마무리하였다." />
+	<ITEM id="23006" name="웹스 구제청바지 A" mesh_name="eq_legs_12" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="legs" weight="14" bt_price="3000" hp="0" ap="23" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="웹스에서 선보인 구제청바지. 거친 모험가들에게 적합하다." />
+		
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="23501" name="플렉스 트레이닝 바지 A" mesh_name="eq_legs_g002" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="50" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="뛰어난 신축성과 착용감을 강조한 플렉스의 여성용 바지" />
+	<ITEM id="23508" name="렉스 군용바지 A" mesh_name="eq_legs_007" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="legs" weight="10" bt_price="200" hp="1" ap="8" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="렉스가 납품하고 있는 여군용 바지" />		
+	<ITEM id="23502" name="아로나 여성용 청바지 A" mesh_name="eq_legs_j001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(단종 아이템) 남녀노소를 불문하고 가장 널리 입히는 청바지. 여성용" />
+	<ITEM id="23503" name="렉스 군용바지 A" mesh_name="eq_legs_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="15" bt_price="1200" hp="0" ap="22" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="여군을 위해 특별히 제작한 편안한 군용바지" />
+	<ITEM id="23504" name="L* 블랙 면바지 A" mesh_name="eq_legs_ge001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="15" bt_price="2400" hp="0" ap="25" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(단종 아이템) 특별한 여성들을 위해 L*에서 자신있게 내놓은 럭셔리한 느낌의 면바지" />
+	<ITEM id="23505" name="아로나 여성용 청바지 A" mesh_name="eq_legs_j001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="남녀노소를 불문하고 가장 널리 입히는 청바지. 여성용" />
+	<ITEM id="23506" name="렉스 군용바지 A" mesh_name="eq_legs_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="legs" weight="15" bt_price="1200" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="여군을 위해 특별히 제작한 편안한 군용바지" />
+	<ITEM id="23507" name="L* 블랙 면바지 A" mesh_name="eq_legs_ge001" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="legs" weight="15" bt_price="2400" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="특별한 여성들을 위해 L*에서 자신있게 내놓은 럭셔리한 느낌의 면바지(신형)" />
+	<ITEM id="23509" name="유라이크 칠부 면바지 A" mesh_name="eq_legs_c002" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="legs" weight="14" bt_price="3000" hp="0" ap="23" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="유라이크에서 내놓은 새련된 느낌의 면바지. 질긴 재질을 사용하여 전장에서의 실용성과 세련된 멋을 더하였다." />
+
+	<!-- feet //////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="24001" name="아레스 전투화 A" mesh_name="eq_feet_a001" totalpoint="0" type="equip" res_sex="m"
+		res_level="0" slot="feet" weight="5" bt_price="50" hp="0" ap="5" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="활동에 편안한 느낌을 주는 고급신발" />
+	<ITEM id="24002" name="베니코 캐쥬얼 슈즈 A" mesh_name="eq_feet_05" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="feet" weight="5" bt_price="100" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="개성있는 디자인으로 인기를 끌고 있는 캐쥬얼슈즈" />
+	<ITEM id="24003" name="르노 등산용 신발 A" mesh_name="eq_feet_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="feet" weight="5" bt_price="500" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="질긴 가죽으로 거친곳을 지형을 이동하더라도 찢어질 염려가 없는 신발" />
+	<ITEM id="24004" name="아레스 철제신발 A" mesh_name="eq_feet_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="feet" weight="8" bt_price="1000" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="다소 무거운 이 신발은 방어력에 치중하고자 하는 사람들을 위해 만들어졌다." />
+	<ITEM id="24005" name="빈츠 캐쥬얼 슈즈 A" mesh_name="eq_feet_09" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="feet" weight="6" bt_price="1500" hp="0" ap="18"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="빈츠에서 선보인 질기지만 캐쥬얼한 느낌의 신발" />
+
+	<!-- 여성 //////////////////////////////////////////////// -->
+	<ITEM id="24501" name="유라이크 가죽구두" mesh_name="eq_feets_leather003" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="feet" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="평범한 느낌의 인조가죽 구두" />
+	<ITEM id="24502" name="렉스 전투화" mesh_name="eq_feets_07" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="feet" weight="5" bt_price="100" hp="0" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="개성있는 아로나의 여성용 하이힐" />
+	<ITEM id="24503" name="L* 가죽부츠" mesh_name="eq_feets_leather007" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="feet" weight="5" bt_price="500" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="L*에서 자신있게 내놓은 고급가죽부츠" />
+	<ITEM id="24504" name="렉스 철제신발 A" mesh_name="eq_feets_p002" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="feet" weight="8" bt_price="1000" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="다소 무겁지만 패션보다는 전투에서의 방어력에 치중하고자 하는 사람들을 위하여 만들어졌다." />
+	<ITEM id="24505" name="유라이크 가죽구두 A" mesh_name="eq_feets_leather008" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="feet" weight="6" bt_price="1500" hp="0" ap="18"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="유라이크에서 제작한 독특한 느낌의 패션 가죽구두" />
+
+	<!-- 
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      이벤트 아이템 ///////////////////////////////////////////////////////////////////////////////////////////////
+      
+	-->
+	<ITEM id="400001" name="사죄의 반지" totalpoint="0" type="equip" res_sex="a" res_level="0"
+		slot="finger" weight="5" bt_price="800" hp="2" ap="2" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="(이벤트 아이템) 사과의 마음이 깃든 반지. 다소 무겁다는게 흠이다." />
+	<ITEM id="400002" name="버그프리 남성용 롱코트" mesh_name="eq_chest_07" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="5" bt_price="0" hp="0" ap="5" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(이벤트 아이템) 아스트라 세계의 이상현상 퇴치에 도움을 준 모험가들만이 입을수 있는 남성용 코트" />
+	<ITEM id="400003" name="버그프리 여성용 롱코트" mesh_name="eq_chest_long003" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="5" bt_price="0" hp="0" ap="5" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(이벤트 아이템) 아스트라 세계의 이상현상 퇴치에 도움을 준 모험가들만이 입을수 있는 여성용 코트" />
+
+	<!-- 
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      캐쉬아이템 //////////////////////////////////////////////////////////////////////////////////////////////////
+	-->
+	<!-- 무기 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 단검 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 장검 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- Pistol : Magazine = 6 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="504001" name="모험가 권총 x2" mesh_name="pistol18x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="12" bt_price="500000" delay="250" damage="18" ctrl_ability="36"
+		magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="초보 모험가들이 주로 사용하는 권총."
+		effect_id="3" />
+	
+	<!-- Revolver : Magazine = 7 ea ///////////////////////////////////////////////////////////////////////// -->
+	<!-- SMG : Magazine = 5 ea//Controllability Point = 1.8 //////////////////////////////////////////////////////// -->
+	<ITEM id="505001" name="모험가 SMG x2" mesh_name="smg06x2" totalpoint="0" type="range" res_sex="a" res_level="0"
+		slot="range" weapon="smg" weight="28" bt_price="500000" delay="85" damage="14" ctrl_ability="90" magazine="40"
+		maxbullet="200" reloadtime="5" slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire"
+		desc="초보 모험가들이 주로 사용하는 SMG. 상인들이 레너드의 탄창을 불법개조하여 판매하고 있는듯 하다." effect_id="5" />
+		
+	<ITEM id="505002" name="아일리스 SMG x2" mesh_name="smg08x2" totalpoint="0" type="range" res_sex="a" res_level="7"
+		slot="range" weapon="smg" weight="28" bt_price="500000" delay="95" damage="16" ctrl_ability="90" magazine="40"
+		maxbullet="200" reloadtime="5" slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire"
+		desc="공화국의 병사들이 사용하던 SMG. 자신들의 근거지의 이름을 붙였다." effect_id="5" />
+
+	<ITEM id="505003" name="아이언크로우 SMG x2" mesh_name="smg07x2" totalpoint="0" type="range" res_sex="a" res_level="15"
+		slot="range" weapon="smg" weight="28" bt_price="500000" delay="90" damage="16" ctrl_ability="80" magazine="40"
+		maxbullet="200" reloadtime="5" slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire"
+		desc="무법자들의 도시 하바니를 주름잡던 아이언크로우에서 사용하는 SMG" effect_id="5" />
+		
+	<!-- SHOTGUN : Magazine = 5 ea ////////////////////////////////////////////////////////////////// -->
+	<ITEM id="506001" name="아일리스 샷건" mesh_name="shotgun08" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="shotgun" weight="18" bt_price="500000" delay="1100" damage="7" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="공화국의 병사들이 사용하던 샷건. 자신들의 근거지의 이름을 붙였다."
+		effect_id="7" />
+	
+	<ITEM id="506002" name="아이언크로우 샷건" mesh_name="shotgun09" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="shotgun" weight="18" bt_price="500000" delay="900" damage="7" ctrl_ability="60"
+		magazine="5" maxbullet="25" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload" snd_fire="we_shotgunpa_fire"
+		snd_dryfire="762arifle_dryfire" desc="무법자들의 도시 하바니를 주름잡던 아이언크로우에서 사용하는 샷건"
+		effect_id="7" />
+	
+	<!-- RIFLE : Magazine = 5 ea //////////////////////////////////////////////////////////////////////////-->
+	<ITEM id="507001" name="아일리스 소총" mesh_name="rifle10" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="rifle" weight="18" bt_price="500000" delay="110" damage="15" ctrl_ability="30"
+		magazine="36" maxbullet="180" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="공화국의 병사들이 사용하던 소총. 자신들의 근거지의 이름을 붙였다." effect_id="8" />
+
+	<ITEM id="507002" name="아이언크로우 소총" mesh_name="rifle15" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rifle" weight="18" bt_price="500000" delay="100" damage="16" ctrl_ability="30"
+		magazine="36" maxbullet="180" reloadtime="6" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload" snd_fire="we_rifle_fire"
+		snd_dryfire="762arifle_dryfire" desc="무법자들의 도시 하바니를 주름잡던 아이언크로우에서 사용하는 소총" effect_id="8" />
+	
+	<!-- MACHINEGUN /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- ROCKET LAUNCHER : Magazine = 4 ea ///////////////////////////////////////////////////////////////////// -->
+	<!-- HANDHELD ITEMS ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 반지 /////////////////////////////////////////////////////////////////////////////////////////////-->
+	<ITEM id="525001" name="클로버 반지" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="0" maxwt="4" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="수정안에 행운의 상징인 클로버가 들어있는 반지. 착용자는 최대보유무게가 늘어난다." />
+	<ITEM id="525002" name="철기병 기념 반지" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="0" maxwt="6" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="철기병들에게 주어졌다는 반지. 그들의 무거운 장비들을 감안한다면 고대 마법사들이 이와 같이 강력한 힘을 가진 반지를 만들어낸 이유를 짐작할 수 있을것이다." />
+	<ITEM id="525003" name="대제의 반지" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="5" maxwt="5" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="대제 리시크를 위해 제작되었다는 반지. 불가사의한 힘이 흐르고 있는 이 반지의 착용자는 고대 마법의 강한 힘을 받는다." />
+	<!-- 장비 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- head /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="520001" name="아레스 군용모" mesh_name="eq_head_a001" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="50000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="아레스사에서 군에 납품하는 모자. 아레스 군용복장 세트에 안성맞춤이다." />
+	<ITEM id="520002" name="사병예복 모자" mesh_name="eq_head_12" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="head" weight="4" bt_price="50000" hp="2" ap="3" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국 사병들이 중요한 행사때 입고 나가는 예복세트 모자" />
+	<ITEM id="520003" name="남성 거너즈헤븐 중절모" mesh_name="eq_head_07" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000" hp="3" ap="6" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 중절모. 짙은 코트류와 어울려보이는 모자" />
+
+	<ITEM id="520004" name="남성 밀리터리룩 두건" mesh_name="eq_head_04" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="부담없이 착용하기 좋은 남성용 두건. 전쟁터에서 자신을 위장하기 위해 사용하기도 한다." />
+	<ITEM id="520005" name="남성 민무늬 두건" mesh_name="eq_head_13" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="센스있게 간편히 착용하기에 좋은 남성용 두건. 패션 악세서리로 사용하곤 한다." />
+	<ITEM id="520006" name="남성 물방울무늬 두건" mesh_name="eq_head_15" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="가볍고 손쉽게 착용가능한 남성용 두건. 빨간색 천위에 귀여운 물방울이 수놓아져 있다." />
+	<ITEM id="520007" name="남성 별무늬 두건" mesh_name="eq_head_14" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="독특한 센스가 담겨진 별무늬의 남성용 두건." />
+
+	<ITEM id="520008" name="남성 이터널블루 모자" mesh_name="eq_head_10" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 남성용 제복 모자" />
+
+		
+	<!-- 여자 //////////////////////////////////////////////////-->
+	<ITEM id="520501" name="렉스 군용모" mesh_name="eq_head_04" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="여군을 위해 렉스에서 납품하고 있는 군용모. 렉스 군용복장 세트에 안성맞춤이다." />
+	<ITEM id="520502" name="여군예복 베레모" mesh_name="eq_head_05" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="7" slot="head" weight="4" bt_price="500000" hp="2" ap="3" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반 여군에게 지급되는 예쁜세트 모자" />
+	<ITEM id="520503" name="여성 거너즈헤븐 모자" mesh_name="eq_head_06" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000" hp="3" ap="6" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 모자" />
+
+	<ITEM id="520504" name="여성 밀리터리룩 두건" mesh_name="eq_head_07" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="부담없이 착용하기 좋은 여성용 두건. 전쟁터에서 자신을 위장하기 위해 사용하기도 한다." />
+	<ITEM id="520505" name="여성 민무늬 두건" mesh_name="eq_head_10" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="센스있게 간편히 착용하기에 좋은 여성용 두건. 패션 악세서리로 사용하곤 한다." />
+	<ITEM id="520506" name="여성 물방울무늬 두건" mesh_name="eq_head_11" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="가볍고 손쉽게 착용가능한 두건. 빨간색 천위에 귀여운 물방울이 수놓아져 있다." />
+	<ITEM id="520507" name="여성 별무늬 두건" mesh_name="eq_head_12" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="독특한 센스가 담겨진 별무늬의 여성용 두건." />
+
+	<ITEM id="520508" name="여성 이터널블루 모자" mesh_name="eq_head_08" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 여성용 제복 모자" />
+		
+	<!-- chest /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="521001" name="사병예복 상의" mesh_name="eq_chest_16" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="chest" weight="14" bt_price="50000" hp="4" ap="16"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국 사병들이 중요한 행사때 입고 나가는 예복 상의" />
+	<ITEM id="521002" name="남성 거너즈헤븐 가죽 롱코트" mesh_name="eq_chest_04" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="chest" weight="15" bt_price="500000" hp="4" ap="22" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 가죽 롱코트와 상의." />
+	<ITEM id="521003" name="남성 이터널블루 코트" mesh_name="eq_chest_17" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="chest" weight="15" bt_price="500000" hp="3" ap="24" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 남성용 제복 상의" />
+		
+	<!-- 여자 //////////////////////////////////////////////////-->
+	<ITEM id="521501" name="여군예복 자켓" mesh_name="eq_chest_long002" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="chest" weight="14" bt_price="500000"
+		hp="3" ap="16" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반 여군에게 지급되는 예복세트 상의" />
+	<ITEM id="521502" name="여성 거너즈헤븐 모직 롱코트" mesh_name="eq_chest_17" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="chest" weight="15" bt_price="500000" hp="4" ap="22" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 여성용 모직롱코트 및 상의." />
+	<ITEM id="521503" name="여성 이터널블루 코트" mesh_name="eq_chest_19" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="chest" weight="15" bt_price="500000" hp="3" ap="24" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 여성용 제복 상의" />
+		
+	<!-- hands /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////////// -->
+	<ITEM id="522001" name="사병예복 장갑" mesh_name="eq_hands_17" totalpoint="0" type="equip" res_sex="m"
+		res_level="7" slot="hands" weight="3" bt_price="50000" hp="2" ap="8" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국 사병들이 중요한 행사때 입고 나가는 예복세트 장갑" />
+	<ITEM id="522002" name="남성 거너즈헤븐 장갑" mesh_name="eq_hands_07" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="hands" weight="4" bt_price="500000" hp="3" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 장갑" />
+	<ITEM id="522003" name="남성 이터널블루 장갑" mesh_name="eq_hands_15" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="hands" weight="4" bt_price="500000" hp="2" ap="14" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 남성용 제복 장갑" />
+		
+	<!-- 여자 ///////////////////////////////////////////////////// -->
+	<ITEM id="522501" name="여군예복 장갑" mesh_name="eq_hands_leather001" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="hands" weight="3" bt_price="50000" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반 여군에게 지급되는 예복세트 장갑" />
+	<ITEM id="522502" name="여성 거너즈헤븐 토끼털 장갑" mesh_name="eq_hands_17" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="hands" weight="4" bt_price="500000" hp="3" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 털장갑. 부드러운 토끼털로 마무리되어 있다." />
+	<ITEM id="522503" name="여성 이터널블루 장갑" mesh_name="eq_hands_19" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="hands" weight="4" bt_price="500000" hp="2" ap="14" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 여성용 제복 장갑" />
+		
+	<!-- legs ////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 ///////////////////////////////////////////////// -->
+	<ITEM id="523001" name="사병예복 하의" mesh_name="eq_legs_16" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="legs" weight="13" bt_price="50000" hp="4" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반사병들이 중요한 행사때 입고 나가는 예복 하의" />
+	<ITEM id="523002" name="남성 거너즈헤븐 정장바지" mesh_name="eq_legs_05" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="legs" weight="14" bt_price="500000" hp="3" ap="24" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 바지." />
+	<ITEM id="523003" name="남성 이터널블루 바지" mesh_name="eq_legs_17" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="legs" weight="14" bt_price="500000" hp="2" ap="26" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 남성용 제복 바지" />
+		
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="523501" name="여군예복 하의" mesh_name="eq_legs_014" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="7" slot="legs" weight="13" bt_price="50000" hp="2" ap="18"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반 여군에게 지급되는 예복세트 하의" />
+	<ITEM id="523502" name="여성 거너즈헤븐 하의" mesh_name="eq_legs_017" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="legs" weight="14" bt_price="500000" hp="3" ap="24" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 여성용 바지." />
+	<ITEM id="523503" name="여성 이터널블루 바지" mesh_name="eq_legs_019" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="legs" weight="14" bt_price="500000" hp="2" ap="26" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 여성용 제복 바지" />
+		
+	<!-- feet //////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="524001" name="사병예복 신발" mesh_name="eq_feet_16" totalpoint="0" type="equip" res_sex="m"
+		res_level="7" slot="feet" weight="3" bt_price="50000" hp="2" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국 사병들이 중요한 행사때 입고 나가는 예복세트 신발" />
+	<ITEM id="524002" name="남성 거너즈헤븐 가죽 구두" mesh_name="eq_feet_06" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="feet" weight="4" bt_price="500000" hp="3" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 가죽 구두" />
+	<ITEM id="524003" name="남성 이터널블루 부츠" mesh_name="eq_feet_17" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="15" slot="feet" weight="4" bt_price="500000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 남성용 제복 부츠" />
+		
+	<!-- 여성 //////////////////////////////////////////////// -->
+	<ITEM id="524501" name="여군예복 신발" mesh_name="eq_feets_014" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="feet" weight="3" bt_price="50000" hp="2" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="제국의 일반 여군에게 지급되는 예복세트 신발" />
+	<ITEM id="524502" name="여성 거너즈헤븐 강화가죽구두" mesh_name="eq_feet_017" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="feet" weight="4" bt_price="500000" hp="3" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="공화국의 사설 조직 거너즈헤븐의 멤버전용 신발. 강화가죽으로 튼튼하게 만들어졌다." />
+	<ITEM id="524503" name="여성 이터널블루 부츠" mesh_name="eq_feet_019" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="15" slot="feet" weight="4" bt_price="500000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="바다의 무법자, 이터널블루의 여성용 제복 부츠" />
+		
+</XML>

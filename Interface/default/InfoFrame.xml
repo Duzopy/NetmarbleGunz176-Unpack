@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="Info">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="InfoFrame">
+		<FRAMELOOK>InfoFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>-1</X>
+			<Y>0</Y>
+			<W>163</W>
+			<H>116</H>
+		</BOUNDS>
+		<TEXT>내정보</TEXT>
+	</FRAME>
+	<LABEL item="static" parent="InfoFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>20</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Lvl </TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="static" parent="InfoFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>HP </TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="static" parent="InfoFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>EN </TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="Level" parent="InfoFrame">
+		<BOUNDS>
+			<X>35</X>
+			<Y>20</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>1</TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="HP" parent="InfoFrame">
+		<BOUNDS>
+			<X>35</X>
+			<Y>40</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>255</G>
+			<B>0</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="EN" parent="InfoFrame">
+		<BOUNDS>
+			<X>35</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>255</G>
+			<B>0</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="static" parent="InfoFrame">
+		<BOUNDS>
+			<X>65</X>
+			<Y>40</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>/</TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="static" parent="InfoFrame">
+		<BOUNDS>
+			<X>65</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>/</TEXT>
+		<TEXTCOLOR>
+			<R>190</R>
+			<G>190</G>
+			<B>190</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="MaxHP" parent="InfoFrame">
+		<BOUNDS>
+			<X>85</X>
+			<Y>40</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>255</G>
+			<B>0</B>
+		</TEXTCOLOR>
+	</LABEL>
+	<LABEL item="MaxEN" parent="InfoFrame">
+		<BOUNDS>
+			<X>85</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>255</G>
+			<B>0</B>
+		</TEXTCOLOR>
+	</LABEL>
+</XML>

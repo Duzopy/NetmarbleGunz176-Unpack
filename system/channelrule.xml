@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML id="channelrule">
+	<CHANNELRULE id="0" name="novice">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+	</CHANNELRULE>
+	<CHANNELRULE id="1" name="mastery">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+		<MAP name="Dungeon"/>
+	</CHANNELRULE>
+</XML>

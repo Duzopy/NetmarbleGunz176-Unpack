@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="StageSettingFrame">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>385</W>
+			<H>231</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>게임 설정</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>51</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>게임 타입</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageType" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>94</X>
+			<Y>51</Y>
+			<W>271</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>80</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>최대 인원</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageMaxPlayer" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>94</X>
+			<Y>80</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>	
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>109</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>라운드</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageRoundCount" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>94</X>
+			<Y>109</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>	
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>138</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>제한시간</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageLimitTime" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>94</X>
+			<Y>138</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>	
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>200</X>
+			<Y>80</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>레벨 제한</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageLevelLimit" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>275</X>
+			<Y>80</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>200</X>
+			<Y>109</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>팀킬 여부</TEXT>
+	</LABEL>	
+	<COMBOBOX item="StageTeamKill" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>275</X>
+			<Y>109</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>200</X>
+			<Y>138</Y>
+			<W>72</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>게임중참가</TEXT>
+	</LABEL>	
+	<COMBOBOX item="Stageintrude" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>275</X>
+			<Y>138</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+
+<!--
+	<BUTTON item="StageTeamKillBtn" parent="StageSettingFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>78</X>
+			<Y>73</Y>
+			<W>71</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</BUTTON>
+-->
+
+	<!-- 버튼 -->
+
+	<BUTTON item="StageSettingApplyBtn" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>161</X>
+			<Y>180</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>확인(&amp;O)</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="StageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>266</X>
+			<Y>180</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>취소(&amp;C)</TEXT>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

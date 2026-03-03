@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="CharCreation">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="CharCreation">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="CC_Frame" parent="CharCreation">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>540</X>
+			<Y>233</Y>
+			<W>260</W>
+			<H>367</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<TEXT>캐릭터 생성</TEXT>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>이름</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>75</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>성별</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>104</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>헤어</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>133</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>얼굴</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>19</X>
+			<Y>162</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>기본장비</TEXT>
+	</LABEL>
+
+	<EDIT item="CC_CharName" parent="CC_Frame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>46</Y>
+			<W>151</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>16</MAXLENGTH>
+	</EDIT>
+
+	<COMBOBOX item="CC_Sex" parent="CC_Frame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>75</Y>
+			<W>151</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">남자</LISTITEM>
+		<LISTITEM>여자</LISTITEM>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>120</COMBOFIRSTSIZE>
+	</COMBOBOX>
+
+	<COMBOBOX item="CC_Hair" parent="CC_Frame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>104</Y>
+			<W>151</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">타입1</LISTITEM>
+		<LISTITEM>타입2</LISTITEM>
+		<LISTITEM>타입3</LISTITEM>
+		<LISTITEM>타입4</LISTITEM>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<COMBOBOX item="CC_Face" parent="CC_Frame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>133</Y>
+			<W>151</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">타입1</LISTITEM>
+		<LISTITEM>타입2</LISTITEM>
+		<LISTITEM>타입3</LISTITEM>
+		<LISTITEM>타입4</LISTITEM>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<COMBOBOX item="CC_Costume" parent="CC_Frame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>162</Y>
+			<W>151</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">액시움 건나이트</LISTITEM>
+		<LISTITEM>트라비아 건파이터</LISTITEM>
+		<LISTITEM>액시움 애서신</LISTITEM>
+		<LISTITEM>트라비아 스카우트</LISTITEM>
+		<LISTITEM>액시움 건프리스트</LISTITEM>
+		<LISTITEM>트라비아 닥터</LISTITEM>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+<!-- 프로그램에서 세팅해주는 Label -->
+
+	<LABEL item="CC_MeleeLabel" parent="CC_Frame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>196</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>데빌 슬레이어</TEXT>
+	</LABEL>
+	<LABEL item="CC_PrimaryLabel" parent="CC_Frame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>216</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>월콤 XLx2</TEXT>
+	</LABEL>
+	<LABEL item="CC_SecondaryLabel" parent="CC_Frame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>236</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>월콤 XLx2</TEXT>
+	</LABEL>
+	<LABEL item="CC_Item1Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>256</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>수류탄 FG-2</TEXT>
+	</LABEL>
+	<LABEL item="CC_Item2Label" parent="CC_Frame">
+		<BOUNDS>
+			<X>90</X>
+			<Y>276</Y>
+			<W>181</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<TEXT>의료킷 K-11</TEXT>
+	</LABEL>
+
+<!-- BUTTON -->
+
+	<BUTTON item="CC_CreateChar" parent="CC_Frame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>37</X>
+			<Y>316</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>확인(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="CC_Cancel" parent="CC_Frame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>142</X>
+			<Y>316</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>취소(&amp;C)</TEXT>
+	</BUTTON>
+</XML>

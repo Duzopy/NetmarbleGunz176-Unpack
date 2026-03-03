@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="CharSelection">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- Char_Info -->
+
+	<FRAME item="Char_infoGroup" parent="CharSelection">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>547</X>
+			<Y>302</Y>
+			<W>253</W>
+			<H>298</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<TEXT>캐릭터 정보</TEXT>
+		<TITLEBAR>true</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>이름</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>70</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>성별</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>90</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>레벨</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>110</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>경험치</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>130</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>바운티</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>체력</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>170</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>방어력</TEXT>
+	</LABEL>
+
+<!-- 프로그램에서 세팅해주는 Label -->
+
+<!-- Char_Info Label -->
+
+<!--
+	<LABEL item="CS_NameLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>46</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+-->
+	<LABEL item="CS_SexLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>70</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_LevelLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>90</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_XPLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>110</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_BPLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>130</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_HPLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>150</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_APLabel" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>80</X>
+			<Y>170</Y>
+			<W>90</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+<!-- 버튼 -->
+
+	<COMBOBOX item="CS_Name" parent="Char_infoGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>46</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM></LISTITEM>
+		<LISTITEM></LISTITEM>
+		<LISTITEM></LISTITEM>
+		<LISTITEM></LISTITEM>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+<!--
+	<BMBUTTON item="CS_Name_Pre" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>239</Y>
+			<W>22</W>
+			<H>22</H>
+		</BOUNDS>
+			<BITMAP type="up">scrollbtn_lt_off.png</BITMAP>
+			<BITMAP type="over">scrollbtn_lt_off.png</BITMAP>
+			<BITMAP type="down">scrollbtn_lt_on.png</BITMAP>
+	</BMBUTTON>
+	<BMBUTTON item="CS_Name_Next" parent="Char_infoGroup">
+		<BOUNDS>
+			<X>208</X>
+			<Y>239</Y>
+			<W>22</W>
+			<H>22</H>
+		</BOUNDS>
+			<BITMAP type="up">scrollbtn_rt_off.png</BITMAP>
+			<BITMAP type="over">scrollbtn_rt_off.png</BITMAP>
+			<BITMAP type="down">scrollbtn_rt_on.png</BITMAP>
+	</BMBUTTON>
+-->
+	<BUTTON item="CS_SelectChar" parent="Char_infoGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>210</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>선택(&amp;G)</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="CS_CreateChar" parent="Char_infoGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>129</X>
+			<Y>210</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>생성(&amp;C)</TEXT>
+	</BUTTON>
+	<BUTTON item="CS_DeleteChar" parent="Char_infoGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>247</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>삭제(&amp;D)</TEXT>
+<!--		<CONFIRMMESSAGE>캐릭터를 삭제하시겠습니까?</CONFIRMMESSAGE> -->
+		<CONFIRMLOOK>NormalFrameLook</CONFIRMLOOK>
+	</BUTTON>
+	<BUTTON item="CS_Prev" parent="Char_infoGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>129</X>
+			<Y>247</Y>
+			<W>105</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>로그아웃(&amp;X)</TEXT>
+		<CONFIRMMESSAGE>GUNZ를 종료하시겠습니까?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>Custom1FrameLook</CONFIRMLOOK>
+	</BUTTON>
+
+	<!-- Equip_Info -->
+
+	<FRAME item="Equip_InfoGroup" parent="CharSelection">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>295</Y>
+			<W>223</W>
+			<H>305</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<TEXT>장비 정보</TEXT>
+		<TITLEBAR>true</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>머리</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>가슴</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>86</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>손</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>106</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>다리</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>126</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>발</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>146</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>손가락</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>166</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>손가락</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>186</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>근접무기</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>206</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>기본무기</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>226</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>보조무기</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>246</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>아이템 1</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>19</X>
+			<Y>266</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>아이템 2</TEXT>
+	</LABEL>
+
+
+<!-- 프로그램에서 세팅해주는 Label -->
+
+	<!-- Equip_Info Label -->
+
+	<LABEL item="CS_HeadLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>46</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_ChestLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>66</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_HandsLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>86</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_LegsLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>106</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_FeetLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>126</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_LFingerLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>146</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_RFingerLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>166</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_MeleeLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>186</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_PrimaryLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>206</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_SecondaryLabel" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>226</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_Item1Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>246</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="CS_Item2Label" parent="Equip_InfoGroup">
+		<BOUNDS>
+			<X>90</X>
+			<Y>266</Y>
+			<W>113</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- 메뉴 버튼들 -->
+
+<!--
+	<BUTTON item="ShowChar_infoGroup" parent="CS_Frame">
+		<BUTTONLOOK>NormalButton2Look</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>20</Y>
+			<W>107</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>기본 정보</TEXT>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+	</BUTTON>
+	<BUTTON item="ShowEquip_InfoGroup" parent="CS_Frame">
+		<BUTTONLOOK>NormalButton2Look</BUTTONLOOK>
+		<BOUNDS>
+			<X>107</X>
+			<Y>20</Y>
+			<W>107</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>장비 아이템</TEXT>
+		<PUSHBUTTON/>
+	</BUTTON>
+-->
+	
+
+<!-- 캐릭터 삭제 확인 -->
+
+	<FRAME item="CS_ConfirmDeleteChar" parent="CharSelection">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>300</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>캐릭터 삭제</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+<!--
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT>캐릭터 이름: </TEXT>
+	</LABEL>
+	<LABEL item="CS_DeleteCharLabel" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>110</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>16</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+-->
+
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>캐릭터를 삭제하려면 YES 를 입력하고,</TEXT>
+	</LABEL>
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>확인버튼을 눌러주십시오.</TEXT>
+	</LABEL>
+	<EDIT item="CS_DeleteCharNameEdit" parent="CS_ConfirmDeleteChar">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>92</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<BUTTON item="CS_DeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>확인(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="CS_CloseConfirmDeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>취소(&amp;C)</TEXT>
+	</BUTTON>
+	
+</XML>

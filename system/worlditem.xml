@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML>
+		<WORLDITEM id="01" name="hp01">
+			<TYPE>hp</TYPE>
+			<TIME>3000</TIME>
+			<AMOUNT>10</AMOUNT>
+			<MODELNAME>red</MODELNAME>
+		</WORLDITEM>
+		<WORLDITEM id="02" name="hp02">
+			<TYPE>hp</TYPE>
+			<TIME>5000</TIME>
+			<AMOUNT>25</AMOUNT>
+			<MODELNAME>red</MODELNAME>
+		</WORLDITEM>
+		<WORLDITEM id="03" name="hp03">
+			<TYPE>hp</TYPE>
+			<TIME>10000</TIME>
+			<AMOUNT>50</AMOUNT>
+			<MODELNAME>red</MODELNAME>
+		</WORLDITEM>
+
+		<WORLDITEM id="04" name="ap01">
+			<TYPE>ap</TYPE>
+			<TIME>3000</TIME>
+			<AMOUNT>10</AMOUNT>
+			<MODELNAME>green</MODELNAME>
+		</WORLDITEM>
+		<WORLDITEM id="05" name="ap02">
+			<TYPE>ap</TYPE>
+			<TIME>3000</TIME>
+			<AMOUNT>25</AMOUNT>
+			<MODELNAME>green</MODELNAME>
+		</WORLDITEM>
+		<WORLDITEM id="06" name="ap03">
+			<TYPE>ap</TYPE>
+			<TIME>10000</TIME>
+			<AMOUNT>50</AMOUNT>
+			<MODELNAME>green</MODELNAME>
+		</WORLDITEM>
+
+		<WORLDITEM id="07" name="bullet01">
+			<TYPE>bullet</TYPE>
+			<TIME>3000</TIME>
+			<AMOUNT>1</AMOUNT>
+			<MODELNAME>yellow</MODELNAME>
+		</WORLDITEM>
+		<WORLDITEM id="08" name="bullet02">
+			<TYPE>bullet</TYPE>
+			<TIME>3000</TIME>
+			<AMOUNT>2</AMOUNT>
+			<MODELNAME>yellow</MODELNAME>
+		</WORLDITEM>
+
+
+
+<!-- 플레이어가 뿌려주는 아이템 -->
+		<WORLDITEM id="100" name="medikit">
+			<TYPE>hp</TYPE>
+			<AMOUNT>10</AMOUNT>
+			<MODELNAME>medikit</MODELNAME>
+		</WORLDITEM>
+
+		<WORLDITEM id="110" name="repairkit">
+			<TYPE>ap</TYPE>
+			<AMOUNT>10</AMOUNT>
+			<MODELNAME>repairkit</MODELNAME>
+		</WORLDITEM>
+
+		
+		<MeshInfo>
+			<AddWorldItemElu name ="yellow">
+				<AddBaseModel name ="yellow" filename="model/worlditem/ef_yellow.elu"/>
+				<AddAnimation name="play" filename="model/worlditem/ef_yellow.elu.ani" motion_type="0" motion_loop_type="loop" />
+			</AddWorldItemElu>	
+			
+			<AddWorldItemElu name ="red">
+				<AddBaseModel name ="red" filename="model/worlditem/ef_red.elu"/>
+				<AddAnimation name="play" filename="model/worlditem/ef_red.elu.ani" motion_type="0" motion_loop_type="loop" />
+			</AddWorldItemElu>	
+			
+			<AddWorldItemElu name ="green">
+				<AddBaseModel name ="green" filename="model/worlditem/ef_green.elu"/>
+				<AddAnimation name="play" filename="model/worlditem/ef_green.elu.ani" motion_type="0" motion_loop_type="loop" />
+			</AddWorldItemElu>	
+
+			<!-- 메디킷 -->
+			<AddWorldItemElu name ="medikit">
+				<AddBaseModel name ="medikit" filename="model/weapon/item/medikit.elu"/>
+			</AddWorldItemElu>	
+
+			<!-- 리페어킷 -->
+			<AddWorldItemElu name ="repairkit">
+				<AddBaseModel name ="repairkit" filename="model/weapon/item/repairkit.elu"/>
+			</AddWorldItemElu>	
+			
+			<AddWorldItemElu name ="baseEffect">
+				<AddBaseModel name ="baseEffect" filename="model/worlditem/ef_prop.elu"/>
+				<AddAnimation name="play" filename="model/worlditem/ef_prop.elu.ani" motion_type="0" motion_loop_type="loop" />
+			</AddWorldItemElu>	
+		</MeshInfo>
+</XML>
+

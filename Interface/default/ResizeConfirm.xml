@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="ResizeConfirm">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes"/>
+	
+	<!--해상도 변경하기전에 경고 메시지 출력하는 메시지 창-->
+	<FRAME item="ResizeConfirm">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>320</W>
+			<H>187</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>해상도 변경</TEXT>
+	</FRAME>
+	
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>새로운 해상도를 적용합니다.</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>새로운 해상도가 적용되지 않으면,</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>86</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>10초뒤에 이전의 해상도로 복구됩니다.</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="ResizeConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>106</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>새로운 해상도를 적용하시겠습니까?</TEXT>
+	</LABEL>
+
+	
+	<BUTTON item="ResizeRequest" parent="ResizeConfirm">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>96</X>
+			<Y>136</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>확인(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="ResizeCancel" parent="ResizeConfirm">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>201</X>
+			<Y>136</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>취소(&amp;C)</TEXT>
+	</BUTTON>
+	
+	<!--해상도 변경한 후 보이는지 다시 한번 묻는 창-->
+
+	<FRAME item="ViewConfirm">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>320</W>
+			<H>187</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>재확인</TEXT>
+	</FRAME>
+	
+	<LABEL item="Label" parent="ViewConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>새로운 해상도를 적용하였습니다.</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="ViewConfirm">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>282</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>이 해상도로 변경하시겠습니까?</TEXT>
+	</LABEL>
+	
+	<LABEL item="ViewConfirm_CountDown" parent="ViewConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>96</Y>
+			<W>282</W>
+			<H>30</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<BUTTON item="ResizeAccept" parent="ViewConfirm">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>96</X>
+			<Y>136</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>변경(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="ResizeReject" parent="ViewConfirm">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>201</X>
+			<Y>136</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>취소(&amp;C)</TEXT>
+	</BUTTON>
+	
+</XML>

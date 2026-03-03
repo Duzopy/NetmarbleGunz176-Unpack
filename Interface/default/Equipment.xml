@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="Equipment">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+	<FRAME item="Equipment">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>640</W>
+			<H>480</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>장비</TEXT>
+	</FRAME>
+
+	<BUTTON item="Equipment_to_Shop" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>150</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>상점으로 가기</TEXT>
+	</BUTTON>		
+
+	<!--장비 장착상황 -->
+
+	<CHARACTERVIEW item="EquipmentInformation" parent="Equipment">
+		<BOUNDS>
+			<X>75</X>
+			<Y>84</Y>
+			<W>224</W>
+			<H>320</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<VISIBLEEQUIPMENT>true</VISIBLEEQUIPMENT>
+	</CHARACTERVIEW>
+
+<!-- 아이템 슬롯 시작 -->
+
+	<ITEMSLOT item="EquipmentSlot_Head" parent="Equipment" parts="head">
+		<BOUNDS>
+			<X>19</X>
+			<Y>84</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_head.tga</BITMAP>			
+	</ITEMSLOT>
+
+	<ITEMSLOT item="EquipmentSlot_Chest" parent="Equipment" parts="chest">
+		<BOUNDS>
+			<X>19</X>
+			<Y>140</Y>
+			<W>56</W>
+			<H>76</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_chest.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Hands" parent="Equipment" parts="hands">
+		<BOUNDS>
+			<X>19</X>
+			<Y>216</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_hands.tga</BITMAP>
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Legs" parent="Equipment" parts="legs">
+		<BOUNDS>
+			<X>19</X>
+			<Y>272</Y>
+			<W>56</W>
+			<H>76</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_legs.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Feet" parent="Equipment" parts="feet">
+		<BOUNDS>
+			<X>19</X>
+			<Y>348</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_feet.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Melee" parent="Equipment" parts="melee">
+		<BOUNDS>
+			<X>19</X>
+			<Y>404</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_melee.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Primary" parent="Equipment" parts="primary">
+		<BOUNDS>
+			<X>75</X>
+			<Y>404</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_arms_I.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Secondary" parent="Equipment" parts="secondary">
+		<BOUNDS>
+			<X>131</X>
+			<Y>404</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_arms_II.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Custom1" parent="Equipment" parts="custom1">
+		<BOUNDS>
+			<X>187</X>
+			<Y>404</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_item_I.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_Custom2" parent="Equipment" parts="custom2">
+		<BOUNDS>
+			<X>243</X>
+			<Y>404</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_item_II.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_FingerL" parent="Equipment" parts="fingerl">
+		<BOUNDS>
+			<X>75</X>
+			<Y>372</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_L_finger.tga</BITMAP>	
+	</ITEMSLOT>
+	<ITEMSLOT item="EquipmentSlot_FingerR" parent="Equipment" parts="fingerr">
+		<BOUNDS>
+			<X>267</X>
+			<Y>372</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>slot_R_finger.tga</BITMAP>	
+	</ITEMSLOT>
+
+<!-- 아이템 슬롯 끝 -->
+
+	<!--장비 목록 -->
+
+	<!--
+	<PICTURE item="Frame11_7" parent="Equipment">
+		<BOUNDS>
+			<X>342</X>
+			<Y>20</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<BITMAP>frame11_7.bmp</BITMAP>
+	</PICTURE>
+	<PICTURE item="Frame11_9" parent="Equipment">
+		<BOUNDS>
+			<X>620</X>
+			<Y>20</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<BITMAP>frame11_9.bmp</BITMAP>
+	</PICTURE>
+	-->
+
+	<BUTTON item="Equipment_CharacterTab" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>46</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>캐릭터</TEXT>
+	</BUTTON>		
+	
+	<BUTTON item="Equipment_AccountTab" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>467</X>
+			<Y>46</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>중앙은행</TEXT>
+	</BUTTON>		
+	
+	<COMBOBOX item="Equip_AllEquipmentFilter" parent="Equipment">
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>85</Y>
+			<W>312</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">모두 보기</LISTITEM>
+		<LISTITEM>머리에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>가슴에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>손에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>다리에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>발에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>근접 무기</LISTITEM>
+		<LISTITEM>주 무기</LISTITEM>
+		<LISTITEM>보조 무기</LISTITEM>
+		<LISTITEM>아이템</LISTITEM>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>200</DROPSIZE>
+	</COMBOBOX>
+
+	<EQUIPMENTLISTBOX item="EquipmentList" parent="Equipment">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>308</X>
+			<Y>106</Y>
+			<W>312</W>
+			<H>314</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+	</EQUIPMENTLISTBOX>
+
+	<!-- 창고 아이템 -->
+	<EQUIPMENTLISTBOX item="AccountItemList" parent="Equipment">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>308</X>
+			<Y>106</Y>
+			<W>312</W>
+			<H>314</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+	</EQUIPMENTLISTBOX>
+
+	<!-- 버튼 -->
+	<BUTTON item="Equip" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>장착하기</TEXT>
+	</BUTTON>	
+	
+	<BUTTON item="BringAccountItemBtn" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>가져오기</TEXT>
+		<CONFIRMMESSAGE>아이템을 가져오시겠습니까?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>Custom1FrameLook</CONFIRMLOOK>
+	</BUTTON>	
+	
+	<BUTTON item="EquipmentClose" parent="Equipment">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>467</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>닫기(&amp;C)</TEXT>
+	</BUTTON>	
+
+
+	<LABEL item="Equip_MyInfo" parent="Equipment">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>174</X>
+			<Y>46</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<FRAME item="Equip_ItemDescriptionFrame" parent="Equipment">
+		<FRAMELOOK>Custom3FrameLook</FRAMELOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>320</X>
+			<Y>310</Y>
+			<W>280</W>
+			<H>160</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+
+	<TEXTAREA item="Equipment_ItemDescription" parent="Equip_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>5</Y>
+			<W>275</W>
+			<H>80</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+	<TEXTAREA item="Equipment_ItemDescription2" parent="Equip_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>80</Y>
+			<W>275</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+	<TEXTAREA item="Equipment_ItemDescription3" parent="Equip_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>100</Y>
+			<W>275</W>
+			<H>60</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+
+
+</XML>

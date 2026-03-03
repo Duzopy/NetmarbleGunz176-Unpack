@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML ID="Sample">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- FONT -->
+	<FONTTEMPLATE item="Verdana18B">
+		<FONTSET>Verdana</FONTSET>
+		<FONTHEIGHT>18</FONTHEIGHT>
+		<BOLD/>
+		<ANTIALIASING/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="굴림체18B">
+		<FONTSET>굴림체</FONTSET>
+		<FONTHEIGHT>18</FONTHEIGHT>
+		<BOLD/>
+		<ANTIALIASING/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="굴림볼드9">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>9</FONTHEIGHT>
+		<BOLD/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="굴림볼드10">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>10</FONTHEIGHT>
+		<BOLD/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="굴림9">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>9</FONTHEIGHT>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="돋움체16">
+		<FONTSET>돋움체</FONTSET>
+		<FONTHEIGHT>16</FONTHEIGHT>
+		<BOLD/>
+		<ANTIALIASING/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="Verdana10">
+		<FONTSET>Verdana</FONTSET>
+		<FONTHEIGHT>10</FONTHEIGHT>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="GameFont">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>10</FONTHEIGHT>
+		<BOLD/>
+		<OUTLINESTYLE>2</OUTLINESTYLE>
+		<COLORARG1>
+			<A>255</A>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLORARG1>
+		<COLORARG2>
+			<A>255</A>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</COLORARG2>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="아웃라인RW">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>12</FONTHEIGHT>
+		<OUTLINESTYLE>1</OUTLINESTYLE>
+		<BOLD/>
+		<ANTIALIASING/>
+		<COLORARG1>
+			<A>220</A>
+			<R>210</R>
+			<G>0</G>
+			<B>0</B>
+		</COLORARG1>
+		<COLORARG2>
+			<A>220</A>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLORARG2>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="아웃라인BW">
+		<FONTSET>굴림</FONTSET>
+		<FONTHEIGHT>12</FONTHEIGHT>
+		<OUTLINESTYLE>1</OUTLINESTYLE>
+		<BOLD/>
+		<ANTIALIASING/>
+		<COLORARG1>
+			<A>220</A>
+			<R>0</R>
+			<G>0</G>
+			<B>210</B>
+		</COLORARG1>
+		<COLORARG2>
+			<A>220</A>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLORARG2>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="돋움14">
+		<FONTSET>돋움체</FONTSET>
+		<FONTHEIGHT>12</FONTHEIGHT>
+		<BOLD/>
+	</FONTTEMPLATE>
+	<FONTTEMPLATE item="InfoFont">
+		<FONTSET>Arial</FONTSET>
+		<FONTHEIGHT>8</FONTHEIGHT>
+		<BOLD/>
+	</FONTTEMPLATE>
+<!-- FONT -->
+	<FRAMELOOKTEMPLATE item="LobbyFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R></R>
+			<G></G>
+			<B></B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X></X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">mainchang.tga</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="StageFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R></R>
+			<G></G>
+			<B></B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X></X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">DefaultListFrame.tga</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="ShopFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>굴림볼드10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>23</X>
+			<Y>3</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">shop-background.tga</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="EquipFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>굴림볼드10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>23</X>
+			<Y>3</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">equip.tga</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="NullFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>30</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<!--<BITMAP type="4">NULL</BITMAP>-->
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	
+	<!-- LISTBOXLOOK BEGIN -->
+	
+	<LISTBOXLOOKTEMPLATE item="NullListBoxLook">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</LISTBOXLOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="ChatFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>241</G>
+			<B>241</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>10</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+	
+	<!-- LISTBOXLOOK END -->
+	
+	
+	<FRAMELOOKTEMPLATE item="NormalFrameLook">
+		<STRETCH>true</STRETCH>
+		<FONT>굴림볼드10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>23</X>
+			<Y>3</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">main_layout1.tga</BITMAP>
+			<BITMAP type="1">main_layout2.tga</BITMAP>
+			<BITMAP type="2">main_layout3.tga</BITMAP>
+			<BITMAP type="3">main_layout4.tga</BITMAP>
+			<BITMAP type="4">main_layout5.tga</BITMAP>
+			<BITMAP type="5">main_layout6.tga</BITMAP>
+			<BITMAP type="6">main_layout7.tga</BITMAP>
+			<BITMAP type="7">main_layout8.tga</BITMAP>
+			<BITMAP type="8">main_layout9.tga</BITMAP>
+		</BITMAPS>
+		<!--
+		<CLOSE>
+			<BITMAP type="up">frame00-close.png</BITMAP>
+			<BITMAP type="down">frame00-closedown.png</BITMAP>
+		</CLOSE>
+		<MINIMIZE>
+			<BITMAP type="up">frame00-minimize.png</BITMAP>
+			<BITMAP type="down">frame00-minimizedown.png</BITMAP>
+		</MINIMIZE>
+-->
+	</FRAMELOOKTEMPLATE>
+		
+	<BUTTONLOOKTEMPLATE item="CheckboxButtonLook">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0">btn_chk.png</BITMAP>
+		</UP>
+		<DISABLE/>	
+	</BUTTONLOOKTEMPLATE>
+	
+	
+
+	<FRAMELOOKTEMPLATE item="BlackFrameLook">
+		<DEFAULT>true</DEFAULT>
+		<STRETCH>true</STRETCH>
+		<FONT>굴림볼드11</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>30</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">frame12_1.tga</BITMAP>
+			<BITMAP type="1">frame12_2.tga</BITMAP>
+			<BITMAP type="2">frame12_3.tga</BITMAP>
+			<BITMAP type="3">frame12_4.tga</BITMAP>
+			<BITMAP type="4">frame12_5.tga</BITMAP>
+			<BITMAP type="5">frame12_6.tga</BITMAP>
+			<BITMAP type="6">frame12_7.tga</BITMAP>
+			<BITMAP type="7">frame12_8.tga</BITMAP>
+			<BITMAP type="8">frame12_9.tga</BITMAP>
+		</BITMAPS>
+<!--
+		<CLOSE>
+			<BITMAP type="up">frame00-close.png</BITMAP>
+			<BITMAP type="down">frame00-closedown.png</BITMAP>
+		</CLOSE>
+		<MINIMIZE>
+			<BITMAP type="up">frame00-minimize.png</BITMAP>
+			<BITMAP type="down">frame00-minimizedown.png</BITMAP>
+		</MINIMIZE>
+-->
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="Black2FrameLook">
+		<DEFAULT>true</DEFAULT>
+		<STRETCH>true</STRETCH>
+		<FONT>굴림볼드11</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>30</X>
+			<Y></Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">frame11_1.bmp</BITMAP>
+			<BITMAP type="1">frame11_1.bmp</BITMAP>
+			<BITMAP type="2">frame11_1.bmp</BITMAP>
+			<BITMAP type="3">frame11_1.bmp</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">frame11_1.bmp</BITMAP>
+			<BITMAP type="6">frame11_1.bmp</BITMAP>
+			<BITMAP type="7">frame11_1.bmp</BITMAP>
+			<BITMAP type="8">frame11_1.bmp</BITMAP>
+		</BITMAPS>
+<!--
+		<CLOSE>
+			<BITMAP type="up">frame00-close.png</BITMAP>
+			<BITMAP type="down">frame00-closedown.png</BITMAP>
+		</CLOSE>
+		<MINIMIZE>
+			<BITMAP type="up">frame00-minimize.png</BITMAP>
+			<BITMAP type="down">frame00-minimizedown.png</BITMAP>
+		</MINIMIZE>
+-->
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="InfoFrameLook">
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>3</X>
+			<Y>6</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">infoframe-0.png</BITMAP>
+			<BITMAP type="1">infoframe-1.png</BITMAP>
+			<BITMAP type="2">infoframe-2.png</BITMAP>
+			<BITMAP type="3">infoframe-3.png</BITMAP>
+			<BITMAP type="4">infoframe-4.png</BITMAP>
+			<BITMAP type="5">infoframe-5.png</BITMAP>
+			<BITMAP type="6">infoframe-6.png</BITMAP>
+			<BITMAP type="7">infoframe-7.png</BITMAP>
+			<BITMAP type="8">infoframe-8.png</BITMAP>
+		</BITMAPS>
+		<STRETCH>true</STRETCH>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="SideBar">
+		<FONT>gulim</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>3</X>
+			<Y>6</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">sidebar-0.png</BITMAP>
+			<BITMAP type="1">sidebar-1.png</BITMAP>
+			<BITMAP type="2">sidebar-2.png</BITMAP>
+			<BITMAP type="3">sidebar-3.png</BITMAP>
+			<BITMAP type="4">sidebar-4.png</BITMAP>
+			<BITMAP type="5">sidebar-5.png</BITMAP>
+			<BITMAP type="6">sidebar-6.png</BITMAP>
+			<BITMAP type="7">sidebar-7.png</BITMAP>
+			<BITMAP type="8">sidebar-8.png</BITMAP>
+		</BITMAPS>
+		<STRETCH>true</STRETCH>
+	</FRAMELOOKTEMPLATE>
+	
+	<!--Edit Looks Begin-->
+	
+	<EDITLOOKTEMPLATE item="NormalEditLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">layout_Default_box5.tga</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</BITMAPS>
+	</EDITLOOKTEMPLATE>
+	<EDITLOOKTEMPLATE item="NullEditLook">
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<!--<BITMAP type="4">NULL</BITMAP>-->
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+		<FONT>GameFont</FONT>
+		<CUSTOMLOOK/>
+	</EDITLOOKTEMPLATE>
+	
+	<!--Edit Looks End-->
+	
+	<LABELLOOKTEMPLATE item="NormalLabelLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+	<LABELLOOKTEMPLATE item="TitleLabelLook">
+		<FONT>굴림볼드10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+	<BUTTONLOOKTEMPLATE item="NormalButtonLook">
+		<FONT>굴림볼드9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0">layout_Default1.tga</BITMAP>
+			<BITMAP type="1">layout_Default2.tga</BITMAP>
+			<BITMAP type="2">layout_Default3.tga</BITMAP>
+			<BITMAP type="3">layout_Default4.tga</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">layout_Default6.tga</BITMAP>
+			<BITMAP type="6">layout_Default7.tga</BITMAP>
+			<BITMAP type="7">layout_Default8.tga</BITMAP>
+			<BITMAP type="8">layout_Default9.tga</BITMAP>
+		</UP>
+		<DOWN>
+			<BITMAP type="0">layout_Default1.tga</BITMAP>
+			<BITMAP type="1">layout_Default2.tga</BITMAP>
+			<BITMAP type="2">layout_Default3.tga</BITMAP>
+			<BITMAP type="3">layout_Default4.tga</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">layout_Default6.tga</BITMAP>
+			<BITMAP type="6">layout_Default7.tga</BITMAP>
+			<BITMAP type="7">layout_Default8.tga</BITMAP>
+			<BITMAP type="8">layout_Default9.tga</BITMAP>
+		</DOWN>
+		<OVER>
+			<BITMAP type="0">layout_Default1.tga</BITMAP>
+			<BITMAP type="1">layout_Default2.tga</BITMAP>
+			<BITMAP type="2">layout_Default3.tga</BITMAP>
+			<BITMAP type="3">layout_Default4.tga</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">layout_Default6.tga</BITMAP>
+			<BITMAP type="6">layout_Default7.tga</BITMAP>
+			<BITMAP type="7">layout_Default8.tga</BITMAP>
+			<BITMAP type="8">layout_Default9.tga</BITMAP>
+		</OVER>
+		<DISABLE>
+			<BITMAP type="0">layout_Default1.tga</BITMAP>
+			<BITMAP type="1">layout_Default2.tga</BITMAP>
+			<BITMAP type="2">layout_Default3.tga</BITMAP>
+			<BITMAP type="3">layout_Default4.tga</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">layout_Default6.tga</BITMAP>
+			<BITMAP type="6">layout_Default7.tga</BITMAP>
+			<BITMAP type="7">layout_Default8.tga</BITMAP>
+			<BITMAP type="8">layout_Default9.tga</BITMAP>
+		</DISABLE>
+	</BUTTONLOOKTEMPLATE>
+	<BUTTONLOOKTEMPLATE item="NullButtonLook">
+		<FONT>굴림볼드9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</UP>
+		<DOWN>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</DOWN>
+		<OVER>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</OVER>
+		<DISABLE>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</DISABLE>
+	</BUTTONLOOKTEMPLATE>
+	<BUTTONLOOKTEMPLATE item="NormalBmButtonLook">
+		<FONT>굴림볼드9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTHIGHLIGHTCOLOR>
+	</BUTTONLOOKTEMPLATE>
+	<BUTTONLOOKTEMPLATE item="NormalButton2Look">
+		<FONT>굴림볼드9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4">layout_Default_box5.tga</BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</UP>
+		<DOWN>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4">layout_Default_box5.tga</BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</DOWN>
+		<OVER>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4">layout_Default_box5.tga</BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</OVER>
+	</BUTTONLOOKTEMPLATE>
+	<BUTTONLOOKTEMPLATE item="NormalButton_SlotLook">
+		<FONT>굴림볼드9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTDOWNCOLOR>
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</UP>
+		<DOWN>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</DOWN>
+		<OVER>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</OVER>
+	</BUTTONLOOKTEMPLATE>
+	<GROUPLOOKTEMPLATE item="NormalGroupLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>굴림볼드12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>10</X>
+			<Y>0</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+		    <BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+	</GROUPLOOKTEMPLATE>
+
+	<LISTBOXLOOKTEMPLATE item="NormalListBoxLook">
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">layout_Default1.bmp</BITMAP>
+			<BITMAP type="1">layout_Default2.bmp</BITMAP>
+			<BITMAP type="2">layout_Default3.bmp</BITMAP>
+			<BITMAP type="3">layout_Default4.bmp</BITMAP>
+			<BITMAP type="4">layout_Default5.tga</BITMAP>
+			<BITMAP type="5">layout_Default4.bmp</BITMAP>
+			<BITMAP type="6">layout_Default7.bmp</BITMAP>
+			<BITMAP type="7">layout_Default2.bmp</BITMAP>
+			<BITMAP type="8">layout_Default9.bmp</BITMAP>
+		</BITMAPS>
+<!--
+		<BITMAPS>
+			<BITMAP type="0">listbox00_1.png</BITMAP>
+			<BITMAP type="1">listbox00_2.png</BITMAP>
+			<BITMAP type="2">listbox00_3.png</BITMAP>
+			<BITMAP type="3">listbox00_4.png</BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5">listbox00_6.png</BITMAP>
+			<BITMAP type="6">listbox00_7.png</BITMAP>
+			<BITMAP type="7">listbox00_8.png</BITMAP>
+			<BITMAP type="8">listbox00_9.png</BITMAP>
+		</BITMAPS>
+-->
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+	</LISTBOXLOOKTEMPLATE>
+
+	<LISTBOXLOOKTEMPLATE item="NormalListBoxLook2">
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">layout_Default1.tga</BITMAP>
+			<BITMAP type="1">layout_Default2.tga</BITMAP>
+			<BITMAP type="3">layout_Default3.tga</BITMAP>
+			<BITMAP type="4">layout_Default4.tga</BITMAP>
+			<BITMAP type="5">layout_Default5.tga</BITMAP>
+			<BITMAP type="6">layout_Default6,tga</BITMAP>
+			<BITMAP type="7">layout_Default7.tga</BITMAP>
+			<BITMAP type="8">layout_Default8.tga</BITMAP>
+			<BITMAP type="9">layout_Default9.tga</BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+	</LISTBOXLOOKTEMPLATE>
+
+	<LISTBOXLOOKTEMPLATE item="ChatListBoxLook">
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+			<BITMAP type="9">NULL</BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+		<ITEMTEXTMULTILINE/>
+	</LISTBOXLOOKTEMPLATE>
+
+	<LISTBOXLOOKTEMPLATE item="EquipListBoxLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+		<ITEMTEXTMULTILINE/>
+		<ITEMTEXTHCENTER/>
+		<ITEMTEXTVCENTER/>
+	</LISTBOXLOOKTEMPLATE>
+
+	<LISTBOXLOOKTEMPLATE item="ChannelListBoxLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">NULL</BITMAP>
+			<BITMAP type="1">NULL</BITMAP>
+			<BITMAP type="2">NULL</BITMAP>
+			<BITMAP type="3">NULL</BITMAP>
+			<BITMAP type="4">NULL</BITMAP>
+			<BITMAP type="5">NULL</BITMAP>
+			<BITMAP type="6">NULL</BITMAP>
+			<BITMAP type="7">NULL</BITMAP>
+			<BITMAP type="8">NULL</BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+		<ITEMTEXTHCENTER/>
+		<ITEMTEXTVCENTER/>
+	</LISTBOXLOOKTEMPLATE>
+
+	<COMBOLISTBOXLOOKTEMPLATE item="NormalComboListBoxLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>109</R>
+			<G>207</G>
+			<B>246</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>19</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+	</COMBOLISTBOXLOOKTEMPLATE>
+	<COMBOLISTBOXLOOKTEMPLATE item="NormalComboListBox2Look">
+		<DEFAULT>true</DEFAULT>
+		<FONT>gulim</FONT>
+		<BITMAPS>
+			<BITMAP type="0">layout_Default_box1.tga</BITMAP>
+			<BITMAP type="1">layout_Default_box2.tga</BITMAP>
+			<BITMAP type="2">layout_Default_box3.tga</BITMAP>
+			<BITMAP type="3">layout_Default_box4.tga</BITMAP>
+			<BITMAP type="4">layout_Default_box5.tga</BITMAP>
+			<BITMAP type="5">layout_Default_box6.tga</BITMAP>
+			<BITMAP type="6">layout_Default_box7.tga</BITMAP>
+			<BITMAP type="7">layout_Default_box8.tga</BITMAP>
+			<BITMAP type="8">layout_Default_box9.tga</BITMAP>
+		</BITMAPS>
+		<SELECTEDPLANECOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>192</R>
+			<G>192</G>
+			<B>192</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+	</COMBOLISTBOXLOOKTEMPLATE>
+
+	<SLIDERLOOKTEMPLATE item="SliderLook">
+		<DEFAULT>true</DEFAULT>
+		<PLANECOLOR>
+			<R>50</R>
+			<G>50</G>
+			<B>50</B>
+		</PLANECOLOR>
+		<THUMBCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</THUMBCOLOR>
+	</SLIDERLOOKTEMPLATE>
+
+<!--ScrollBar Begin-->
+	<ARROWLOOKTEMPLATE item="NormalArrowLook">
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">scrollbtn_up_off.png</BITMAP>
+			<BITMAP type="5">scrollbtn_dn_off.png</BITMAP>
+			<BITMAP type="6">scrollbtn_up_on.png</BITMAP>
+			<BITMAP type="7">scrollbtn_dn_on.png</BITMAP>
+		</BITMAPS>
+	</ARROWLOOKTEMPLATE>
+	<ARROWLOOKTEMPLATE item="DefaultArrowLook">
+		<DEFAULT>true</DEFAULT>
+		<BITMAPS>
+			<BITMAP type="0">scrollbtn_lt_off.png</BITMAP>
+			<BITMAP type="1">scrollbtn_rt_off.png</BITMAP>
+			<BITMAP type="2">scrollbtn_lt_on.png</BITMAP>
+			<BITMAP type="3">scrollbtn_rt_on.png</BITMAP>
+			<BITMAP type="4">scrollbtn_up_off.png</BITMAP>
+			<BITMAP type="5">scrollbtn_dn_off.png</BITMAP>
+			<BITMAP type="6">scrollbtn_up_on.png</BITMAP>
+			<BITMAP type="7">scrollbtn_dn_on.png</BITMAP>
+		</BITMAPS>
+	</ARROWLOOKTEMPLATE>
+	<THUMBLOOKTEMPLATE item="NormalThumbLook">
+		<DEFAULT>true</DEFAULT>
+		<VERTICAL type="normal">
+			<BITMAP type="0">scrollbtn_thumb.png</BITMAP>
+		</VERTICAL>
+	</THUMBLOOKTEMPLATE>
+	<!--		<BITMAP type="1">scrollbuttonv00-2.png</BITMAP>
+			<BITMAP type="2">scrollbuttonv00-3.png</BITMAP>
+		</VERTICAL>
+	</THUMBLOOKTEMPLATE>
+	<THUMBLOOKTEMPLATE item="NormalThumb2Look">
+		<DEFAULT>true</DEFAULT>
+		<VERTICAL type="normal">
+			<BITMAP type="0">scrollbar_mi_0.bmp</BITMAP>
+		</VERTICAL>
+	</THUMBLOOKTEMPLATE>
+	<THUMBLOOKTEMPLATE item="DefaultThumbLook">
+		<DEFAULT>true</DEFAULT>
+		<VERTICAL type="normal">
+			<BITMAP type="0">scrollbar_up.tga</BITMAP>
+			<BITMAP type="1">scrollbar_middle.tga</BITMAP>
+			<BITMAP type="2">scrollbar_down.tga</BITMAP>
+		</VERTICAL>
+	</THUMBLOOKTEMPLATE>
+	-->
+	<SCROLLBARLOOKTEMPLATE item="NormalScrollBarLook">
+		<DEFAULT>true</DEFAULT>
+		<VERTICAL>
+			<BITMAP type="0">scrollbar_frame.tga</BITMAP>
+			<BITMAP type="1">scrollbar_frame.tga</BITMAP>
+			<BITMAP type="2">scrollbar_frame.tga</BITMAP>
+		</VERTICAL>
+		<HORIZONTAL>
+			<BITMAP type="0">scrollbar_frame.tga</BITMAP>
+			<BITMAP type="1">scrollbar_frame.tga</BITMAP>
+			<BITMAP type="2">scrollbar_frame.tga</BITMAP>
+		</HORIZONTAL>
+	</SCROLLBARLOOKTEMPLATE>
+<!--ScrollBar End-->
+
+	<FRAMELOOKTEMPLATE item="CombatInfo1FrameLook">
+		<STRETCH>true</STRETCH>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>10</X>
+			<Y>0</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0">frame11_1.bmp</BITMAP>
+			<BITMAP type="1">frame11_1.bmp</BITMAP>
+			<BITMAP type="2">frame11_1.bmp</BITMAP>
+			<BITMAP type="3">frame11_1.bmp</BITMAP>
+			<BITMAP type="4">frame11_5.tga</BITMAP>
+			<BITMAP type="5">frame11_1.bmp</BITMAP>
+			<BITMAP type="6">frame11_7.bmp</BITMAP>
+			<BITMAP type="7">frame11_8.bmp</BITMAP>
+			<BITMAP type="8">frame11_9.bmp</BITMAP>
+		</BITMAPS>
+	</FRAMELOOKTEMPLATE>
+<!--
+	<LABELLOOKTEMPLATE item="HPAPLabelLook">
+		<FONT>Verdana18B</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+-->
+	<LABELLOOKTEMPLATE item="CombatNameLabelLook">
+		<FONT>돋움체16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+	<LABELLOOKTEMPLATE item="CombatCashLabelLook">
+		<FONT>Verdana10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+	<LABELLOOKTEMPLATE item="CenterMessageLabelLook">
+		<FONT>Verdana18B</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>0</B>
+		</TEXTCOLOR>
+	</LABELLOOKTEMPLATE>
+	
+	<ANIMATIONTEMPLATE item="CursorAnimation">
+		<BITMAP>cursor0000.png</BITMAP>
+		<BITMAP>cursor0001.png</BITMAP>
+		<BITMAP>cursor0002.png</BITMAP>
+		<BITMAP>cursor0003.png</BITMAP>
+		<BITMAP>cursor0004.png</BITMAP>
+		<BITMAP>cursor0005.png</BITMAP>
+		<BITMAP>cursor0006.png</BITMAP>
+		<BITMAP>cursor0007.png</BITMAP>
+		<BITMAP>cursor0008.png</BITMAP>
+		<BITMAP>cursor0009.png</BITMAP>
+		<BITMAP>cursor0010.png</BITMAP>
+		<DELAY>90</DELAY>
+	</ANIMATIONTEMPLATE>
+
+	<CURSOR>
+		<ANIMTEMPLATE>CursorAnimation</ANIMTEMPLATE>
+	</CURSOR>
+	
+	<BUTTONLOOKTEMPLATE item="ListBoxButtonLook">
+		<WIRELOOK/>
+		<DOWN>
+			<BITMAP type="0">scrollbtn_dn_on.png</BITMAP>
+			<BITMAP type="1">scrollbtn_dn_off.png</BITMAP>
+			<BITMAP type="2">scrollbtn_up_on.png</BITMAP>
+			<BITMAP type="3">scrollbtn_up_off.png</BITMAP>
+		</DOWN>
+	</BUTTONLOOKTEMPLATE>	
+	
+	<LISTBOXLOOKTEMPLATE item="CustomListBoxLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<SELECTEDPLANECOLOR>
+			<R>109</R>
+			<G>207</G>
+			<B>246</B>
+		</SELECTEDPLANECOLOR>
+		<SELECTEDTEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</SELECTEDTEXTCOLOR>
+		<UNFOCUSEDSELECTEDPLANECOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</UNFOCUSEDSELECTEDPLANECOLOR>
+	</LISTBOXLOOKTEMPLATE>
+	
+	<!--ScrollBar Begin-->
+	<SLIDERLOOKTEMPLATE item="SliderLook">
+		<DEFAULT>true</DEFAULT>
+		<PLANECOLOR>
+			<R>50</R>
+			<G>50</G>
+			<B>50</B>
+		</PLANECOLOR>
+		<THUMBCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</THUMBCOLOR>
+	</SLIDERLOOKTEMPLATE>
+	<ARROWLOOKTEMPLATE item="CustomtArrowLook">
+		<DEFAULT>true</DEFAULT>
+		<BITMAPS>
+			<BITMAP type="0">scrollbtn_lt_off.png</BITMAP>
+			<BITMAP type="1">scrollbtn_rt_off.png</BITMAP>
+			<BITMAP type="2">scrollbtn_lt_on.png</BITMAP>
+			<BITMAP type="3">scrollbtn_rt_on.png</BITMAP>
+			<BITMAP type="4">scrollbtn_up_off.png</BITMAP>
+			<BITMAP type="5">scrollbtn_dn_off.png</BITMAP>
+			<BITMAP type="6">scrollbtn_up_on.png</BITMAP>
+			<BITMAP type="7">scrollbtn_dn_on.png</BITMAP>
+		</BITMAPS>
+	</ARROWLOOKTEMPLATE>
+	<THUMBLOOKTEMPLATE item="CustomThumbLook">
+		<DEFAULT>true</DEFAULT>
+		<VERTICAL type="normal">
+			<BITMAP type="0">scrollbtn_thumb.png</BITMAP>
+		</VERTICAL>
+		<HORIZONTAL type="normal">
+			<BITMAP type="0">scrollbtn_thumb.png</BITMAP>
+		</HORIZONTAL>
+	</THUMBLOOKTEMPLATE>
+	<SCROLLBARLOOKTEMPLATE item="CustomScrollbarLook">
+		<DEFAULT>true</DEFAULT>
+	</SCROLLBARLOOKTEMPLATE>
+	<SLIDERTHUMBLOOKTEMPLATE item="CustomSliderThumbLookTemplate">
+		<DEFAULT>true</DEFAULT>
+		<BITMAP>scrollbtn_thumb.png</BITMAP>
+	</SLIDERTHUMBLOOKTEMPLATE>
+<!--ScrollBar End-->
+
+	<BUTTONLOOKTEMPLATE item="Custom1ButtonLook">
+		<DEFAULT>true</DEFAULT>
+		<FONT>돋움14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTDOWNCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTDOWNCOLOR>	
+		<TEXTHIGHLIGHTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTHIGHLIGHTCOLOR>
+		<UP>
+			<BITMAP type="0">btn_chk.png</BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">btntxtr_gnd_off.png</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</UP>
+		<DOWN>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">btntxtr_gnd_on.png</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</DOWN>
+		<OVER>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">btntxtr_gnd_on.png</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</OVER>
+		<DISABLE>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">btntxtr_gnd_off.png</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</DISABLE>	
+		<CUSTOMLOOK/>
+	</BUTTONLOOKTEMPLATE>
+	
+	<FRAMELOOKTEMPLATE item="Custom1FrameLook">
+		<DEFAULT>true</DEFAULT>
+		<STRETCH>false</STRETCH>
+		<FONT>돋움14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<TEXTPOSITION>
+			<X>12</X>
+			<Y>9</Y>
+		</TEXTPOSITION>
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4">bgtxtr_grd.png</BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7">btntxtr_gnd_off.png</BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</BITMAPS>
+		<CUSTOMLOOK>1</CUSTOMLOOK>
+	</FRAMELOOKTEMPLATE>
+	
+	<FRAMELOOKTEMPLATE item="Custom2FrameLook">
+		<DEFAULT>true</DEFAULT>
+		<STRETCH>false</STRETCH>
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1">frame_b.png</BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7">frame_t.png</BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</BITMAPS>
+		<BGCOLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>19</B>
+		</BGCOLOR>
+		<CUSTOMLOOK>2</CUSTOMLOOK>
+	</FRAMELOOKTEMPLATE>
+	<FRAMELOOKTEMPLATE item="Custom3FrameLook">
+		<STRETCH>false</STRETCH>
+		<BITMAPS>
+			<BITMAP type="0"></BITMAP>
+			<BITMAP type="1"></BITMAP>
+			<BITMAP type="2"></BITMAP>
+			<BITMAP type="3"></BITMAP>
+			<BITMAP type="4"></BITMAP>
+			<BITMAP type="5"></BITMAP>
+			<BITMAP type="6"></BITMAP>
+			<BITMAP type="7"></BITMAP>
+			<BITMAP type="8"></BITMAP>
+		</BITMAPS>
+		<CUSTOMLOOK>3</CUSTOMLOOK>
+	</FRAMELOOKTEMPLATE>	
+</XML>

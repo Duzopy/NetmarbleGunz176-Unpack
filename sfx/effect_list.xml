@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<xml>
+	<!--
+		AddEffectElu -> 모델만 있는  이펙트와 연결할 경우
+
+			등록된 에니메이션의 이름은 기본적으로는 "play" 로 호출
+			에니메이션의 종류가 하나 이상이라면 프로그래머에게 이야기 하여야 함..
+
+		lit_model : 라이트의 영향을 안받는 렌더링.( 1 : true 0 : false ) 이펙트 모델은 기본 true
+		name_sort : 모델 내부에서의 이름 정렬 .
+	-->
+	<AddEffectElu name="water_splash">
+		<AddBaseModel name="water_splash" filename="ef_effect004.elu" />
+		<AddAnimation name="play" filename="ef_effect004.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="empty_cartridge1">
+		<AddBaseModel name="empty_cartridge1" filename="empty_cartridge01.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="empty_cartridge2">
+		<AddBaseModel name="empty_cartridge2" filename="empty_cartridge02.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_damage1">
+		<AddBaseModel name="sworddam01" filename="ef_sworddam01.elu" />
+		<AddAnimation name="play" filename="ef_sworddam01.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_damage2">
+		<AddBaseModel name="sworddam02" filename="ef_sworddam02.elu" />
+		<AddAnimation name="play" filename="ef_sworddam02.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_damage3">
+		<AddBaseModel name="sworddam03" filename="ef_sworddam03.elu" />
+		<AddAnimation name="play" filename="ef_sworddam03.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_damage4">
+		<AddBaseModel name="sworddam04" filename="ef_sworddam04.elu" />
+		<AddAnimation name="play" filename="ef_sworddam04.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_glaze">
+		<AddBaseModel name="swordglaze" filename="swordglaze.elu" />
+		<AddAnimation name="play" filename="swordglaze.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="dash_effect">
+		<AddBaseModel name="dash_effect" filename="ef_dash.elu" />
+		<AddAnimation name="play" filename="ef_dash.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="grenade_effect" name_sort="1">
+		<AddBaseModel name="grenadeeffect" filename="ef_grenade01.elu" />
+		<AddAnimation name="play" filename="ef_grenade01.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="rocket_effect" name_sort="1">
+		<AddBaseModel name="rocketfire_effect" filename="ef_rocket_fire.elu" />
+		<AddAnimation name="play" filename="ef_rocket_fire.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="sword_defence_effect" name_sort="1">
+		<AddBaseModel name="sword_defence" filename="ef_effect003c.elu" />
+		<AddAnimation name="play" filename="ef_effect003c.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="sword_defence_effect2" name_sort="1">
+		<AddBaseModel name="sword_defence2" filename="ef_effect003b.elu" />
+		<AddAnimation name="play" filename="ef_effect003b.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<!--
+	<AddEffectElu name="rocket_smoke_effect" name_sort="1">
+		<AddBaseModel name="rocketsmoke_effect" filename="ef_rocket_smoke.elu" />
+		<AddAnimation name="play" filename="ef_rocket_smoke.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	-->
+
+	<AddEffectElu name="sword_wave_effect" name_sort="1">
+		<AddBaseModel name="sword_wave" filename="ef_wave.elu" />
+		<AddAnimation name="play" filename="ef_wave.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_uppercut_effect">
+		<AddBaseModel name="sword_uppercut" filename="ef_uppercut.elu" />
+		<AddAnimation name="play" filename="ef_uppercut.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="sword_uppercut_damage_effect">
+		<AddBaseModel name="sword_uppercut_damage" filename="ef_uppercut_damage.elu" />
+		<AddAnimation name="play" filename="ef_uppercut_damage.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_dagger_upper">
+		<AddBaseModel name="ef_dagger_upper" filename="ef_dagger_upper.elu" />
+		<AddAnimation name="play" filename="ef_dagger_upper.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="rebirth">
+		<AddBaseModel name="rebirth" filename="ef_rebirth.elu" />
+		<AddAnimation name="play" filename="ef_rebirth.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="levelup">
+		<AddBaseModel name="levelup" filename="ef_levelup.elu" />
+		<AddAnimation name="play" filename="ef_levelup.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="levelup01">
+		<AddBaseModel name="levelup01" filename="ef_levelup01.elu" />
+		<AddAnimation name="play" filename="ef_levelup01.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_effect001.elu">
+		<AddBaseModel name="ef_effect001.elu" filename="ef_effect001.elu" />
+		<AddAnimation name="play" filename="ef_effect001.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_effect002.elu">
+		<AddBaseModel name="ef_effect002.elu" filename="ef_effect002.elu" />
+		<AddAnimation name="play" filename="ef_effect002.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="flame_rifle">
+		<AddBaseModel name="flame_rifle" filename="ef_flame_rifle.elu" />
+		<AddAnimation name="play" filename="ef_flame_rifle.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="flame_mg">
+		<AddBaseModel name="flame_mg" filename="ef_flame_mg.elu" />
+		<AddAnimation name="play" filename="ef_flame_mg.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="flame_shotgun">
+		<AddBaseModel name="flame_shotgun" filename="ef_flame_shotgun.elu" />
+		<AddAnimation name="play" filename="ef_flame_shotgun.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="flame_pistol">
+		<AddBaseModel name="flame_pistol" filename="ef_flame_pistol.elu" />
+		<AddAnimation name="play" filename="ef_flame_pistol.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_heal">
+		<AddBaseModel name="ef_heal" filename="ef_heal.elu" />
+		<AddAnimation name="play" filename="ef_heal.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_repair">
+		<AddBaseModel name="ef_repair" filename="ef_repair.elu" />
+		<AddAnimation name="play" filename="ef_repair.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_ammunition">
+		<AddBaseModel name="ef_ammunition" filename="ef_ammunition.elu" />
+		<AddAnimation name="play" filename="ef_ammunition.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_gre_ex">
+		<AddBaseModel name="ef_gre_ex" filename="ef_gre_ex.elu" />
+		<AddAnimation name="play" filename="ef_gre_ex.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="fragment01">
+		<AddBaseModel name="fragment01" filename="fragment01.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="fragment02">
+		<AddBaseModel name="fragment02" filename="fragment02.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="fragment03">
+		<AddBaseModel name="fragment03" filename="fragment03.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="fragment04">
+		<AddBaseModel name="fragment04" filename="fragment04.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="fragment05">
+		<AddBaseModel name="fragment05" filename="fragment05.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="fragment06">
+		<AddBaseModel name="fragment06" filename="fragment06.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_eatitem">
+		<AddBaseModel name="ef_eatitem" filename="ef_eatitem.elu" />
+		<AddAnimation name="play" filename="ef_eatitem.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+
+	<AddEffectElu name="ef_pre_all.elu">
+		<AddBaseModel name="ef_pre_all.elu" filename="ef_pre_all.elu" />
+		<AddAnimation name="play" filename="ef_pre_all.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_pre_exe.elu">
+		<AddBaseModel name="ef_pre_exe.elu" filename="ef_pre_exe.elu" />
+		<AddAnimation name="play" filename="ef_pre_exe.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_pre_fan.elu">
+		<AddBaseModel name="ef_pre_fan.elu" filename="ef_pre_fan.elu" />
+		<AddAnimation name="play" filename="ef_pre_fan.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_pre_head.elu">
+		<AddBaseModel name="ef_pre_head.elu" filename="ef_pre_head.elu" />
+		<AddAnimation name="play" filename="ef_pre_head.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_pre_un.elu">
+		<AddBaseModel name="ef_pre_un.elu" filename="ef_pre_un.elu" />
+		<AddAnimation name="play" filename="ef_pre_un.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="blue_commander">
+		<AddBaseModel name="blue_commander" filename="ef_vip_blue.elu" />
+		<AddAnimation name="play" filename="ef_vip_blue.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+	<AddEffectElu name="red_commander">
+		<AddBaseModel name="red_commander" filename="ef_vip_red.elu" />
+		<AddAnimation name="play" filename="ef_vip_red.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_lostcon.elu">
+		<AddBaseModel name="ef_lostcon.elu" filename="ef_lostcon.elu" />
+		<AddAnimation name="play" filename="ef_lostcon.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_chat.elu">
+		<AddBaseModel name="ef_chat.elu" filename="ef_chat.elu" />
+		<AddAnimation name="play" filename="ef_chat.elu.ani" motion_type="0" motion_loop_type="loop" />
+	</AddEffectElu>
+
+</xml>

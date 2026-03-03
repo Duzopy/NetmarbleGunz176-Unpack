@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML>
+	<NOTIFY id="10">네트워크 초기화에 실패했습니다</NOTIFY>
+	<NOTIFY id="11">네트워크 포트가 이미 사용중입니다</NOTIFY>
+	<NOTIFY id="15">NAT 네트워크 연결설정</NOTIFY>
+	<NOTIFY id="51">사용자를 찾을 수 없습니다</NOTIFY>
+	<NOTIFY id="100">스테이지가 이미 존재합니다</NOTIFY>
+	<NOTIFY id="101">존재하지 않는 스테이지입니다</NOTIFY>
+	<NOTIFY id="110">팀의 인원이 모두 찼습니다</NOTIFY>
+	<NOTIFY id="150">채팅방이 생성되었습니다</NOTIFY>
+	<NOTIFY id="151">채팅방 생성에 실패하였습니다</NOTIFY>
+	<NOTIFY id="152">이미 존재하는 채팅방입니다</NOTIFY>
+	<NOTIFY id="153">존재하지 않는 채팅방입니다</NOTIFY>
+	<NOTIFY id="154">참여하고 있는 채팅방이 없습니다</NOTIFY>
+	<NOTIFY id="155">채팅방에 참여할수 없습니다</NOTIFY>
+	<NOTIFY id="156">참여인원이 너무 많습니다</NOTIFY>
+	<NOTIFY id="200">스피드핵 사용으로 판정되었습니다.</NOTIFY>
+</XML>

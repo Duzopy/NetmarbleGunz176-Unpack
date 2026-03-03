@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="Lobby">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<!-- Root -->
+	<FRAME item="Lobby">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!--상단바탕화면-->
+	<PICTURE item="Lobby_MainBGTop" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_t.png</BITMAP>
+	</PICTURE>
+
+	<!--상단이펙트-->
+	<PICTURE item="Lobby_StripTop" parent="Lobby_MainBGTop">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+
+	<!-- 로고 -->
+	<PICTURE item="Lobby_Logo" parent="Lobby_MainBGTop">
+		<BOUNDS>
+			<X>8</X>
+			<Y>8</Y>
+			<W>200</W>
+			<H>85</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq.png</BITMAP>
+	</PICTURE>
+
+	<!--하단바탕화면-->
+	<PICTURE item="Lobby_MainBGBottom" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE>
+
+	<!--하단이펙트-->
+	<PICTURE item="Lobby_StripBottom" parent="Lobby_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- main Window -->
+	<FRAME item="Lobby_Main_Frame" parent="Lobby">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!--플레이어 이름-->
+	<LABEL item="Lobby_PlayerName" parent="Lobby_MainBGBottom">
+		<FONT>돋움14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>8</X>
+			<Y>18</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>이름</TEXT>
+	</LABEL>
+	<!--플레이어 상세정보-->
+	<LABEL item="Lobby_PlayerSpec" parent="Lobby_MainBGBottom">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>110</X>
+			<Y>18</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>플레이어 상세정보</TEXT>
+	</LABEL>
+
+	<!--방리스트 배경화면-->
+	<PICTURE item ="Lobby_RoomListBG" parent="Lobby">
+		<BOUNDS>
+			<X>8</X>
+			<Y>118</Y>
+			<W>784</W>
+			<H>192</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gamelist_panel.png</BITMAP>
+	</PICTURE>
+
+	<!-- 페이지 번호 버튼 1~6 -->
+
+	<BMBUTTON item ="Lobby_RoomNo1" parent="Lobby">
+		<BOUNDS>
+			<X>9</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page1_off.png</BITMAP>
+		<BITMAP type="over">page1_off.png</BITMAP>
+		<BITMAP type="down">page1_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="Lobby_RoomNo2" parent="Lobby">
+		<BOUNDS>
+			<X>28</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page2_off.png</BITMAP>
+		<BITMAP type="over">page2_off.png</BITMAP>
+		<BITMAP type="down">page2_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="Lobby_RoomNo3" parent="Lobby">
+		<BOUNDS>
+			<X>47</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page3_off.png</BITMAP>
+		<BITMAP type="over">page3_off.png</BITMAP>
+		<BITMAP type="down">page3_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="Lobby_RoomNo4" parent="Lobby">
+		<BOUNDS>
+			<X>66</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page4_off.png</BITMAP>
+		<BITMAP type="over">page4_off.png</BITMAP>
+		<BITMAP type="down">page4_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="Lobby_RoomNo5" parent="Lobby">
+		<BOUNDS>
+			<X>85</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page5_off.png</BITMAP>
+		<BITMAP type="over">page5_off.png</BITMAP>
+		<BITMAP type="down">page5_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="Lobby_RoomNo6" parent="Lobby">
+		<BOUNDS>
+			<X>104</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page6_off.png</BITMAP>
+		<BITMAP type="over">page6_off.png</BITMAP>
+		<BITMAP type="down">page6_on.png</BITMAP>
+	</BMBUTTON>
+
+	<!--페이지 이동버튼-->
+	<BMBUTTON item ="StageBeforeBtn" parent="Lobby">
+		<BOUNDS>
+			<X>125</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page_cursor_l_off.png</BITMAP>
+		<BITMAP type="over">page_cursor_l_on.png</BITMAP>
+		<BITMAP type="down">page_cursor_l_on.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item ="StageAfterBtn" parent="Lobby">
+		<BOUNDS>
+			<X>146</X>
+			<Y>320</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page_cursor_r_off.png</BITMAP>
+		<BITMAP type="over">page_cursor_r_on.png</BITMAP>
+		<BITMAP type="down">page_cursor_r_on.png</BITMAP>
+	</BMBUTTON>
+
+	<!-- 게임 리스트 -->
+	<ROOMLIST item="Lobby_StageList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>10</X>
+			<Y>10</Y>
+			<W>763</W>
+			<H>160</H>
+		</BOUNDS>
+		<BITMAP type="frame">stripe.tga</BITMAP>
+		<BITMAP type ="back">banner_Mansion.tga</BITMAP>
+		<BITMAP type="back">banner_Prison.tga</BITMAP>
+		<BITMAP type="back">banner_Prison II.tga</BITMAP>
+		<BITMAP type="back">banner_Station.tga</BITMAP>
+		<BITMAP type="back">banner_Battle Arena.tga</BITMAP>
+		<BITMAP type="back">banner_Town.tga</BITMAP>
+		<BITMAP type="back">banner_Dungeon.tga</BITMAP>
+		<BITMAP type="back">banner_Ruin.tga</BITMAP>
+		<BITMAP type="icon" mode="0">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="2">Gladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="1">teamdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="3">teamGladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="4">Assasin-mode.tga</BITMAP>
+		<SIZE type="width">360</SIZE>
+		<SIZE type="height">32</SIZE>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</ROOMLIST>
+
+<!-- BUTTON -->
+	<BUTTON item="StageJoin" parent="Lobby">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>587</X>
+			<Y>320</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>게임 참가</TEXT>
+	</BUTTON>
+	<BUTTON item="StageCreateFrameCaller" parent="Lobby">
+	<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>692</X>
+			<Y>320</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>게임 생성</TEXT>
+	</BUTTON>
+
+	<!-- PLAYER LIST -->
+
+	<PLAYERLISTBOX item="LobbyChannelPlayerList" parent = "Lobby" >
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>564</X>
+			<Y>364</Y>
+			<W>204</W>
+			<H>164</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</PLAYERLISTBOX>
+
+	<BMBUTTON item="LobbyChannelPlayerListPrev" parent="Lobby">
+		<BOUNDS>
+			<X>774</X>
+			<Y>487</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">player_cursor_t_off.png</BITMAP>
+		<BITMAP type="over">player_cursor_t_on.png</BITMAP>
+		<BITMAP type="down">player_cursor_t_on.png</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	<BMBUTTON item="LobbyChannelPlayerListNext" parent="Lobby">
+		<BOUNDS>
+			<X>774</X>
+			<Y>508</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">player_cursor_b_off.png</BITMAP>
+		<BITMAP type="over">player_cursor_b_on.png</BITMAP>
+		<BITMAP type="down">player_cursor_b_on.png</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+<!-- 채팅 -->
+
+	<LISTBOX item="ChannelChattingOutput" parent="Lobby">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>9</X>
+			<Y>364</Y>
+			<W>539</W>
+			<H>141</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+	</LISTBOX>
+
+	<EDIT item="ChannelChattingInput" parent="Lobby">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>9</X>
+			<Y>504</Y>
+			<W>539</W>
+			<H>24</H>
+		</BOUNDS>
+		<MAXLENGTH>128</MAXLENGTH>
+	</EDIT>
+
+	<!--상단버튼배열-->
+
+	<!--상점버튼-->
+	<BMBUTTON item="ShopCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>289</X>
+			<Y>42</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_off_kr.tga</BITMAP>
+		<BITMAP type="over">shop_on_kr.tga</BITMAP>
+		<BITMAP type="down">shop_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	<!--장비버튼-->
+	<BMBUTTON item="EquipmentCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>392</X>
+			<Y>42</Y>
+			<W>89</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	<!--채널선택버튼-->
+	<BMBUTTON item="ChannelListFrameCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>565</X>
+			<Y>42</Y>
+			<W>118</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">channel_off_kr.tga</BITMAP>
+		<BITMAP type="over">channel_on_kr.tga</BITMAP>
+		<BITMAP type="down">channel_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	<!--옵션버튼-->
+	<BMBUTTON item="OptionFrame" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>689</X>
+			<Y>42</Y>
+			<W>91</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">option_off_kr.tga</BITMAP>
+		<BITMAP type="over">option_on_kr.tga</BITMAP>
+		<BITMAP type="down">option_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!--하단버튼배열-->
+
+	<!--로그아웃버튼-->
+	<BMBUTTON item="Logout" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>385</X>
+			<Y>560</Y>
+			<W>120</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">logout_off_kr.tga</BITMAP>
+		<BITMAP type="over">logout_on_kr.tga</BITMAP>
+		<BITMAP type="down">logout_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+		<CONFIRMMESSAGE>GUNZ를 종료하시겠습니까?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>Custom1FrameLook</CONFIRMLOOK>
+	</BMBUTTON>
+	<!--캐릭터변경버튼-->
+	<BMBUTTON item="CharSelectionCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>515</X>
+			<Y>560</Y>
+			<W>136</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	<!--게임바로하기버튼-->
+	<BMBUTTON item="QuickJoin" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>650</X>
+			<Y>560</Y>
+			<W>150</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">playnow_off_kr.tga</BITMAP>
+		<BITMAP type="over">playnow_on_kr.tga</BITMAP>
+		<BITMAP type="down">playnow_on_kr.tga</BITMAP>
+	</BMBUTTON>
+</XML>

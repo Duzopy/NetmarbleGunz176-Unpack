@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML>
+	<MESSAGE cid="10310">%1이(가) %3의 HP를 잃었습니다</MESSAGE>
+	<MESSAGE cid="10311">%1은(는) 죽었습니다</MESSAGE>
+</XML>

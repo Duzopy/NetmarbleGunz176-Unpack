@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<XML ID="Shop">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Shop">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>640</W>
+			<H>480</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>상점</TEXT>
+	</FRAME>
+	
+	<BUTTON item="Shop_to_Equipment" parent="Shop">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>150</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>장비로 가기</TEXT>
+	</BUTTON>
+
+	<!--내 장비 정보-->
+	<CHARACTERVIEW item="EquipmentInformationShop" parent="Shop">
+		<BOUNDS>
+			<X>19</X>
+			<Y>84</Y>
+			<W>280</W>
+			<H>378</H>
+		</BOUNDS>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<VISIBLEEQUIPMENT>true</VISIBLEEQUIPMENT>
+	</CHARACTERVIEW>
+	
+	<LABEL item="MyCash" parent="Shop">
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>174</X>
+			<Y>46</Y>
+			<W>125</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+	</LABEL>
+
+<!--장비 목록 -->
+
+	<BUTTON item="AllEquipmentListCaller" parent="Shop">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>46</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>구입</TEXT>
+	</BUTTON>
+	
+	<BUTTON item="MyAllEquipmentListCaller" parent="Shop">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>467</X>
+			<Y>46</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>판매</TEXT>
+	</BUTTON>
+
+	<!-- 상점에 있는 물건 -->
+	<EQUIPMENTLISTBOX item="AllEquipmentList" parent="Shop">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>106</Y>
+			<W>312</W>
+			<H>314</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+	</EQUIPMENTLISTBOX>
+
+	<!-- 내가 가지고 있는 물건 -->
+	<EQUIPMENTLISTBOX item="MyAllEquipmentList" parent="Shop">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<ARROWLOOK>CustomtArrowLook</ARROWLOOK>
+		<THUMBLOOK>CustomThumbLook</THUMBLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>106</Y>
+			<W>312</W>
+			<H>314</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</EQUIPMENTLISTBOX>
+
+	<COMBOBOX item="Shop_AllEquipmentFilter" parent="Shop">
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>굴림9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>85</Y>
+			<W>312</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">모두 보기</LISTITEM>
+		<LISTITEM>머리에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>가슴에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>손에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>다리에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>발에 장착할 수 있는 장비 보기</LISTITEM>
+		<LISTITEM>근접 무기</LISTITEM>
+		<LISTITEM>주 무기</LISTITEM>
+		<LISTITEM>보조 무기</LISTITEM>
+		<LISTITEM>아이템</LISTITEM>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>200</DROPSIZE>
+	</COMBOBOX>
+
+
+<!-- 버튼 -->
+	<BUTTON item="BuyConfirmCaller" parent="Shop">
+	<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>구입(&amp;B)</TEXT>
+		<CONFIRMMESSAGE>정말로 구입하시겠습니까?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>Custom1FrameLook</CONFIRMLOOK>
+	</BUTTON>
+	<BUTTON item="SellConfirmCaller" parent="Shop">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>308</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>판매(&amp;S)</TEXT>
+		<CONFIRMMESSAGE>정말로 판매하시겠습니까?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>Custom1FrameLook</CONFIRMLOOK>
+	</BUTTON>
+	<BUTTON item="ShopClose" parent="Shop">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>467</X>
+			<Y>428</Y>
+			<W>154</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>닫기(&amp;C)</TEXT>
+	</BUTTON>
+
+	<FRAME item="Shop_ItemDescriptionFrame" parent="Shop">
+		<FRAMELOOK>Custom3FrameLook</FRAMELOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>320</X>
+			<Y>310</Y>
+			<W>280</W>
+			<H>160</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT></TEXT>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<TEXTAREA item="Shop_ItemDescription" parent="Shop_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>5</Y>
+			<W>275</W>
+			<H>80</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+	<TEXTAREA item="Shop_ItemDescription2" parent="Shop_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>80</Y>
+			<W>275</W>
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+	<TEXTAREA item="Shop_ItemDescription3" parent="Shop_ItemDescriptionFrame">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>100</Y>
+			<W>275</W>
+			<H>60</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+		<TEXTOFFSET>
+			<X>10</X>
+			<Y>10</Y>
+		</TEXTOFFSET>
+	</TEXTAREA>
+
+
+<!-- 검색 창 -->
+
+<!--
+	<FRAME item="EquipSearch" parent="Shop">
+		<FRAMELOOK>Custom1FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>214</W>
+			<H>145</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>장비 검색</TEXT>
+	</FRAME>
+	<EDIT item="EquipmentSearchEdit" parent="EquipSearch">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>10</X>
+			<Y>25</Y>
+			<W>194</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</EDIT>
+
+	<BUTTON item="EquipmentSearch" parent="EquipSearch">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>49</X>
+			<Y>96</Y>
+			<W>79</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>검 색(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="EquipSearch">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>128</X>
+			<Y>96</Y>
+			<W>79</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>취소(&amp;C)</TEXT>
+	</BUTTON>
+-->
+</XML>
